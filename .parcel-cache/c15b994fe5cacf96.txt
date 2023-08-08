@@ -1,5 +1,6 @@
-6013
-35/home/martin/dev/wedding/index.html1691528133701334243 0
+6014
+35/home/martin/dev/wedding/index.html1691536998894442790 0
+35/home/martin/dev/wedding/.gitignore1691528415932811723 0
 56/home/martin/dev/wedding/node_modules/js-tokens/index.js1691512981384343948 0
 57/home/martin/dev/wedding/node_modules/js-tokens/README.md1691512981408344203 0
 60/home/martin/dev/wedding/node_modules/js-tokens/CHANGELOG.md1691512981376343862 0
@@ -970,7 +971,7 @@
 74/home/martin/dev/wedding/node_modules/@swc/helpers/cjs/_async_iterator.cjs1691512981468344839 0
 105/home/martin/dev/wedding/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/syntax/node/Url.js1691512981728347596 0
 93/home/martin/dev/wedding/node_modules/@swc/helpers/esm/_class_apply_descriptor_destructure.js1691512981668346960 0
-47/home/martin/dev/wedding/dist/hero.598c73e4.jpg1691528087684763080 0
+47/home/martin/dev/wedding/dist/hero.598c73e4.jpg1691536910577501248 0
 116/home/martin/dev/wedding/node_modules/@parcel/optimizer-htmlnano/node_modules/csso/lib/restructure/7-mergeRuleset.js1691512981472344881 0
 81/home/martin/dev/wedding/node_modules/caniuse-lite/data/features/vector-effect.js1691512981876349166 0
 106/home/martin/dev/wedding/node_modules/@parcel/optimizer-htmlnano/node_modules/csso/lib/restructure/prepare1691512981632346578 1
@@ -1997,7 +1998,7 @@
 106/home/martin/dev/wedding/node_modules/@parcel/optimizer-htmlnano/node_modules/css-select/lib/attributes.js1691512981428344414 0
 63/home/martin/dev/wedding/node_modules/node-addon-api/LICENSE.md1691512981560345815 0
 101/home/martin/dev/wedding/node_modules/@parcel/core/test/fixtures/local-plugin-config-pkg/node_modules1691512981708347384 1
-53/home/martin/dev/wedding/dist/wedding.3464ddca.js.map1691528133777335186 0
+53/home/martin/dev/wedding/dist/wedding.3464ddca.js.map1691536999010444027 0
 80/home/martin/dev/wedding/node_modules/csso/node_modules/css-tree/dist/version.js1691512981800348359 0
 61/home/martin/dev/wedding/node_modules/css-tree/lib/version.js1691512981800348359 0
 82/home/martin/dev/wedding/node_modules/csso/cjs/restructure/4-restructShorthand.cjs1691512981428344414 0
@@ -2132,7 +2133,7 @@
 69/home/martin/dev/wedding/node_modules/caniuse-lite/data/regions/AX.js1691512981616346409 0
 72/home/martin/dev/wedding/node_modules/node-addon-api/tools/check-napi.js1691512981540345602 0
 70/home/martin/dev/wedding/node_modules/@parcel/core/lib/public/Asset.js1691512981592346154 0
-40/home/martin/dev/wedding/images/hero.jpg1691271768448653650 0
+40/home/martin/dev/wedding/images/hero.jpg1691533867776719116 0
 69/home/martin/dev/wedding/node_modules/@parcel/codeframe/test/fixtures1691512981384343948 1
 87/home/martin/dev/wedding/node_modules/@parcel/utils/test/input/sourcemap/source-root.js1691512981696347257 0
 64/home/martin/dev/wedding/node_modules/node-addon-api/except.gypi1691512981392344033 0
@@ -2357,7 +2358,7 @@
 79/home/martin/dev/wedding/node_modules/csso/cjs/restructure/3-disjoinRuleset.cjs1691512981408344203 0
 129/home/martin/dev/wedding/node_modules/@parcel/core/test/fixtures/plugins/node_modules/parcel-transformer-bad-engines/package.json1691512981796348318 0
 81/home/martin/dev/wedding/node_modules/@parcel/workers/lib/process/ProcessChild.js1691512981552345730 0
-37/home/martin/dev/wedding/css/main.css1691528047376262778 0
+37/home/martin/dev/wedding/css/main.css1691534093891213447 0
 84/home/martin/dev/wedding/node_modules/@swc/helpers/lib/_object_without_properties.js1691512981736347681 0
 90/home/martin/dev/wedding/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib1691512981688347172 1
 105/home/martin/dev/wedding/node_modules/@parcel/node-resolver-core/parcel-resolver.linux-arm-gnueabihf.node1691512981732347638 0
@@ -2552,9 +2553,9 @@
 97/home/martin/dev/wedding/node_modules/css-select/node_modules/domutils/lib/esm/stringify.d.ts.map1691512981588346112 0
 72/home/martin/dev/wedding/node_modules/css-tree/cjs/syntax/node/Ratio.cjs1691512981696347257 0
 56/home/martin/dev/wedding/node_modules/timsort/LICENSE.md1691512981400344117 0
-29/home/martin/dev/wedding/dist1691528133785335285 1
+29/home/martin/dev/wedding/dist1691536999010444027 1
 69/home/martin/dev/wedding/node_modules/msgpackr/dist/index-no-eval.cjs1691512981424344372 0
-49/home/martin/dev/wedding/dist/wedding.3464ddca.js1691528133773335136 0
+49/home/martin/dev/wedding/dist/wedding.3464ddca.js1691536999006443984 0
 100/home/martin/dev/wedding/node_modules/htmlnano/docs/versioned_docs/version-2.0.0/010-introduction.md1691512981656346833 0
 52/home/martin/dev/wedding/dist/index.d7514646.css.map1691513296455749854 0
 63/home/martin/dev/wedding/node_modules/tslib/CopyrightNotice.txt1691512981916349590 0
@@ -2579,7 +2580,7 @@
 87/home/martin/dev/wedding/node_modules/@parcel/source-map/parcel_sourcemap_wasm/dist-web1691512981756347893 1
 119/home/martin/dev/wedding/node_modules/@parcel/optimizer-htmlnano/node_modules/csso/lib/restructure/8-restructRuleset.js1691512981476344924 0
 95/home/martin/dev/wedding/node_modules/lmdb/dependencies/lmdb-data-v1/libraries/liblmdb/mtest2.c1691512981672347002 0
-48/home/martin/dev/wedding/dist/index.47ca9330.css1691528087668762882 0
+48/home/martin/dev/wedding/dist/index.47ca9330.css1691536910581501291 0
 121/home/martin/dev/wedding/node_modules/@parcel/optimizer-svgo/node_modules/css-select/lib/pseudo-selectors/subselects.d.ts1691512981584346069 0
 72/home/martin/dev/wedding/node_modules/mdn-data/css/selectors.schema.json1691512981588346112 0
 55/home/martin/dev/wedding/node_modules/is-glob/README.md1691512981404344159 0
@@ -3256,7 +3257,7 @@
 75/home/martin/dev/wedding/node_modules/abortcontroller-polyfill/package.json1691512981516345348 0
 80/home/martin/dev/wedding/node_modules/@parcel/transformer-image/src/loadSharp.js1691512981424344372 0
 85/home/martin/dev/wedding/node_modules/@parcel/core/lib/requests/ParcelBuildRequest.js1691512981724347554 0
-24/home/martin/dev/wedding1691513839237890556 1
+24/home/martin/dev/wedding1691528415944811868 1
 106/home/martin/dev/wedding/node_modules/css-select/node_modules/entities/lib/generated/decode-data-html.d.ts1691512981636346620 0
 68/home/martin/dev/wedding/node_modules/@parcel/utils/lib/index.js.map1691512981756347893 0
 61/home/martin/dev/wedding/node_modules/@parcel/diagnostic/test1691512981444344584 1
@@ -4331,7 +4332,7 @@
 83/home/martin/dev/wedding/node_modules/@swc/helpers/esm/_class_private_method_get.js1691512981696347257 0
 80/home/martin/dev/wedding/node_modules/@swc/helpers/esm/_await_async_generator.js1691512981664346917 0
 54/home/martin/dev/wedding/node_modules/tslib/tslib.html1691512981888349293 0
-40/home/martin/dev/wedding/dist/index.html1691528133785335285 0
+40/home/martin/dev/wedding/dist/index.html1691536999010444027 0
 62/home/martin/dev/wedding/node_modules/@swc/helpers/esm/_get.js1691512981720347511 0
 75/home/martin/dev/wedding/node_modules/@swc/helpers/esm/_get_prototype_of.js1691512981716347469 0
 75/home/martin/dev/wedding/node_modules/@swc/helpers/esm/_set_prototype_of.js1691512981736347681 0
@@ -4918,7 +4919,7 @@
 68/home/martin/dev/wedding/node_modules/@babel/code-frame/package.json1691512981428344414 0
 65/home/martin/dev/wedding/node_modules/@babel/code-frame/README.md1691512981376343862 0
 82/home/martin/dev/wedding/node_modules/@babel/code-frame/node_modules/color-convert1691512981436344500 1
-52/home/martin/dev/wedding/dist/index.47ca9330.css.map1691528087672762932 0
+52/home/martin/dev/wedding/dist/index.47ca9330.css.map1691536910593501419 0
 74/home/martin/dev/wedding/node_modules/css-what/lib/commonjs/stringify.d.ts1691512981548345687 0
 51/home/martin/dev/wedding/dist/img_bg_2.f74a9e4d.jpg1691513296463749944 0
 95/home/martin/dev/wedding/node_modules/@babel/code-frame/node_modules/color-convert/package.json1691512981376343862 0
