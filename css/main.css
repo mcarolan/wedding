@@ -1,0 +1,227 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Handlee";
+    font-size: 20px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+#content {
+    padding: 20px;
+}
+
+a {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+}
+
+#top-bar h1 {
+    padding: 0;
+    margin: 0;
+    font-family: "Beth Ellen";
+}
+
+.red {
+    color: red;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#top-bar {
+    color: #303030;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 8px 2px -4px gray;
+    background-color: white;
+    z-index: 1;
+}
+
+.hero {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/hero.jpg");
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    height: 600px;
+}
+
+.nav {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav>.nav-header {
+    display: inline;
+}
+
+.nav>.nav-header>.nav-title {
+    font-family: "Beth Ellen";
+    display: inline-block;
+    font-size: 22px;
+    color: #303030;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav>.nav-btn {
+    display: none;
+}
+
+.nav>.nav-links {
+    align-items: center;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.nav>.nav-links>a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #303030;
+    border: solid 1px #EEEEEE;
+    border-radius: 5px;
+}
+
+.nav>.nav-links>a:hover {
+    background-color: #EEEEEE;
+}
+
+.nav>#nav-check {
+    display: none;
+}
+
+@media (max-width:600px) {
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .nav>.nav-links>a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+}
+
+.timeline-wrapper ul, li{
+  list-style: none;
+  padding: 0;
+}
+
+.sessions {
+  margin-top: 2rem;
+  border-radius: 12px;
+  position: relative;
+}
+
+.timeline-wrapper li {
+  padding-bottom: 1.5rem;
+  border-left: 1px solid #303030;
+  position: relative;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+
+.timeline-wrapper li:last-child {
+    border: 0px;
+    padding-bottom: 0;
+}
+
+.timeline-wrapper li:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 1px solid #303030;
+    box-shadow: 3px 3px 0px #EEEEEE;
+    box-shadow: 3px 3px 0px #EEEEEE;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 0px;
+}
+
+.time {
+  font-weight: bold;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: .25rem;
+    border: solid 2px #EEEEEE;
+    width: 100%;
+}
+
+.price {
+    font-family: Arial;
+}
+
+thead tr:first-child {
+    border: none;
+    background: #EEEEEE;
+}
+
+td {
+    border-bottom: solid 1px #EEEEEE;
+}
+
+th {
+    font-weight: bold;
+    border: solid 1px #EEEEEE;
+}
