@@ -45,7 +45,7 @@
 	</div>
 
 	<div id="content">
-        <p>Thanks for getting back to us.</p>
+        <!--  <p>Thanks for getting back to us.</p>
         <p>To begin, please enter the access code from your invite:</p>
         <label for="accessCode">Access Code: </label>
         <input type="text" id="accessCode" name="accessCode" />
@@ -56,98 +56,9 @@
 			<h1>Contact Information</h1>
 
 			<p>We'll only use this to get in contact with important information before the wedding. We'll delete it afterwards.</p>
-		</div>
-		<div class="form-section">
-			<h1>Martin Carolan</h1>
 
-			<div class="radio-label" id="attendance-label">Attendance:</div>
-			<div class="radio-group" role="radiogroup" aria-labelledby="attendance-label">
-				<div>
-					<input type="radio"  name="attendance" value="true" id="able-to-attend"/>
-					<label for="able-to-attend">I'd be delighted to attend ✅</label>
-				</div>
-				<div>
-					<input type="radio" name="attendance" value="false" id="unable-to-attend"/>
-					<label for="unable-to-attend">Regretfully, I'm unable to attend ❎</label>
-				</div>
-			</div>
-
-			<div class="radio-label" id="starter-label">Starter:
-				<span class="servedwith">Served with Bread Rolls and Butter</span>
-			</div>
-			<div class="radio-group" role="radiogroup" aria-labelledby="starter-label">
-				<div>
-					<input type="radio" name="starter" value="A" id="starter-soup" />
-					<label for="starter-soup">
-						Leek and Potato Soup garnished with Deep Fried Leeks 🥔
-						<span class="dietary">Egg Free, Gluten Free, Nut Trace Free</span>
-					</label>
-				</div>
-				<div>
-					<input type="radio" name="starter" value="B" id="starter-na"/>
-					<label for="starter-na">I'd like an alternative due to dietary requirements 🙅</label>
-				</div>
-			</div>
-
-			<div class="radio-label" id="pie-label">
-				Pie:
-				<span class="servedwith">Served with a Red Wine Gravy, Mustard Mash, Mac &amp; Cheese and Vegetables</span>
-			</div>
-			<div class="radio-group" role="radiogroup" aria-labelledby="pie-label">
-				<div>
-					<input type="radio" name="pie" value="A" id="pie-chicken" />
-					<label for="pie-chicken">Chicken &amp; Leek 🐔</label>
-				</div>
-				<div>
-					<input type="radio" name="pie" value="B" id="pie-beef" />
-					<label for="pie-beef">Steak &amp; Merlot 🐮 🍷</label>
-				</div>
-				<div>
-					<input type="radio" name="pie" value="C" id="pie-cheese" />
-					<label for="pie-cheese">Cheese &amp; Onion 🧀 🧅</label>
-				</div>
-				<div>
-					<input type="radio" name="pie" value="D" id="pie-na"/>
-					<label for="pie-na">I'd like an alternative due to dietary requirements 🙅</label>
-				</div>
-			</div>
-
-			<div class="radio-label" id="dessert-label">
-				Dessert:
-				<span class="servedwith">Served with fresh cream</span>
-			</div>
-			<div class="radio-group" role="radiogroup" aria-labelledby="dessert-label">
-				<div>
-					<input type="radio" name="dessert" value="A" id="dessert-tart" />
-					<label for="dessert-tart">
-						Traditional Tart Au Citron with Kirsch Marinated Black Cherries 🍋 🍒
-						<span class="dietary">Gluten Free?</span>
-					</label>
-				</div>
-				<div>
-					<input type="radio" name="dessert" value="B" id="dessert-na" />
-					<label for="dessert-na">I'd like an alternative due to dietary requirements 🙅</label>
-				</div>
-			</div>
-
-			<div class="radio-label" id="main-evening-food-label">Evening food:</div>
-			<div class="radio-group" role="radiogroup" aria-labelledby="main-evening-food-label">
-				<div>
-					<input type="radio" name="main-evening" value="A" id="main-evening-butties"/>
-					<label for="main-evening-butties">I'm happy with either a Fish Finger Buttie 🐟 or a Halloumi Buttie 🧀</label>
-				</div>
-				<div>
-					<input type="radio" name="main-evening" value="B" id="main-evening-na"/>
-					<label for="main-evening-na">I'd like an alternative due to dietary requirements 🙅</label>
-				</div>
-			</div>
-
-			<label id="dietary-label" for="dietary-needs">Additional dietary needs or allergens:</label>
-			<textarea id="dietary-needs" name="dietary-needs" rows="5" placeholder="Is there anything we should let the caterers know about?"></textarea>
-
-			<label id="song-label" for="song">What song would get you on the dance-floor?</label>
-			<textarea id="song" name="song" rows="5" placeholder="Feel free to add a few 💃..."></textarea>
-
+			<input type="email" name="email" id="email"/>
+			<label for="email" id="email-label">Email address :</label>
 		</div>
 
 
@@ -264,9 +175,11 @@
 			<textarea id="evening-song" name="evening-song" rows="5" placeholder="Feel free to add a few 💃..."></textarea>
 
 		</div>
-    </div>
+    </div>  -->
 
-    <script src="./ts/confirm.ts"></script>
+	<div id="root"></div>
+
+    <script src="./ts/confirm.tsx" type="module"></script>
 </body>
 
 </html>
