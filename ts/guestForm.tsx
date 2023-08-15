@@ -26,9 +26,18 @@ export function GuestForm(props: GuestFormProps) {
     }
 
     return <>
-        <div>Thanks! We found your invite.</div>
+        <p>Thanks! We found your invite.</p>
+        <p>Please provide us with an email address for your group. It'll only be used to convey important information.</p>
+
+        <div className="inline-section">
+            <label htmlFor="inline-address">
+                Email address:
+            </label>
+            <input type="email" id="email-address" placeholder="email@provider.com" />
+        </div>
+
         <div>{guestInfos.map((guestInfo) =>
-            <div className="form-section">
+            <div className="form-section" key={guestInfo.id}>
                 <h1>{guestInfo.name}</h1>
 
                 <Attendance guest={guestInfo} onGuestInfoUpdated={onGuestInfoUpdated} />
@@ -48,5 +57,12 @@ export function GuestForm(props: GuestFormProps) {
                 </>)}
             </div>)
         }</div>
+        <div id="submit-container">
+            <div className="button-container">
+                <div className="button" onTouchStart={(_) => { }}>
+                    <input type="button" value="Submit" />
+                </div>
+            </div>
+        </div>
     </>;
 }

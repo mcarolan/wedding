@@ -27269,53 +27269,72 @@ function AccessCodeEntry(props) {
                 children: "Thanks for getting back to us."
             }, void 0, false, {
                 fileName: "ts/accessCodeEntry.tsx",
-                lineNumber: 116,
-                columnNumber: 11
+                lineNumber: 115,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "To begin, please enter the access code from your invite:"
             }, void 0, false, {
                 fileName: "ts/accessCodeEntry.tsx",
+                lineNumber: 116,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "inline-section",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        htmlFor: "accessCode",
+                        children: "Access Code: "
+                    }, void 0, false, {
+                        fileName: "ts/accessCodeEntry.tsx",
+                        lineNumber: 118,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "text",
+                        id: "accessCode",
+                        onChange: handleAccessCodeChange
+                    }, void 0, false, {
+                        fileName: "ts/accessCodeEntry.tsx",
+                        lineNumber: 119,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "ts/accessCodeEntry.tsx",
                 lineNumber: 117,
-                columnNumber: 11
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                htmlFor: "accessCode",
-                children: "Access Code: "
-            }, void 0, false, {
-                fileName: "ts/accessCodeEntry.tsx",
-                lineNumber: 118,
-                columnNumber: 11
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                    type: "text",
-                    id: "accessCode",
-                    onChange: handleAccessCodeChange
+                id: "submit-container",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "button-container",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "button",
+                        onTouchStart: (_)=>{},
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "button",
+                            value: "Check",
+                            onClick: handleCheckAccessCode
+                        }, void 0, false, {
+                            fileName: "ts/accessCodeEntry.tsx",
+                            lineNumber: 124,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "ts/accessCodeEntry.tsx",
+                        lineNumber: 123,
+                        columnNumber: 11
+                    }, this)
                 }, void 0, false, {
                     fileName: "ts/accessCodeEntry.tsx",
-                    lineNumber: 119,
-                    columnNumber: 16
+                    lineNumber: 122,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "ts/accessCodeEntry.tsx",
-                lineNumber: 119,
-                columnNumber: 11
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                    type: "button",
-                    onClick: handleCheckAccessCode,
-                    value: "Check"
-                }, void 0, false, {
-                    fileName: "ts/accessCodeEntry.tsx",
-                    lineNumber: 120,
-                    columnNumber: 16
-                }, this)
-            }, void 0, false, {
-                fileName: "ts/accessCodeEntry.tsx",
-                lineNumber: 120,
-                columnNumber: 11
+                lineNumber: 121,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true);
@@ -27533,11 +27552,44 @@ function GuestForm(props) {
     }
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Thanks! We found your invite."
             }, void 0, false, {
                 fileName: "ts/guestForm.tsx",
                 lineNumber: 29,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "Please provide us with an email address for your group. It'll only be used to convey important information."
+            }, void 0, false, {
+                fileName: "ts/guestForm.tsx",
+                lineNumber: 30,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "inline-section",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        htmlFor: "inline-address",
+                        children: "Email address:"
+                    }, void 0, false, {
+                        fileName: "ts/guestForm.tsx",
+                        lineNumber: 33,
+                        columnNumber: 13
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "email",
+                        id: "email-address",
+                        placeholder: "email@provider.com"
+                    }, void 0, false, {
+                        fileName: "ts/guestForm.tsx",
+                        lineNumber: 36,
+                        columnNumber: 13
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "ts/guestForm.tsx",
+                lineNumber: 32,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27548,7 +27600,7 @@ function GuestForm(props) {
                                 children: guestInfo.name
                             }, void 0, false, {
                                 fileName: "ts/guestForm.tsx",
-                                lineNumber: 32,
+                                lineNumber: 41,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _attendance.Attendance), {
@@ -27556,7 +27608,7 @@ function GuestForm(props) {
                                 onGuestInfoUpdated: onGuestInfoUpdated
                             }, void 0, false, {
                                 fileName: "ts/guestForm.tsx",
-                                lineNumber: 34,
+                                lineNumber: 43,
                                 columnNumber: 17
                             }, this),
                             guestInfo.attendance != true ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {}, void 0, false) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -27566,7 +27618,7 @@ function GuestForm(props) {
                                         onGuestInfoUpdated: onGuestInfoUpdated
                                     }, void 0, false, {
                                         fileName: "ts/guestForm.tsx",
-                                        lineNumber: 37,
+                                        lineNumber: 46,
                                         columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mainCourse.MainCourse), {
@@ -27574,7 +27626,7 @@ function GuestForm(props) {
                                         onGuestInfoUpdated: onGuestInfoUpdated
                                     }, void 0, false, {
                                         fileName: "ts/guestForm.tsx",
-                                        lineNumber: 39,
+                                        lineNumber: 48,
                                         columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _dessert.Dessert), {
@@ -27582,7 +27634,7 @@ function GuestForm(props) {
                                         onGuestInfoUpdated: onGuestInfoUpdated
                                     }, void 0, false, {
                                         fileName: "ts/guestForm.tsx",
-                                        lineNumber: 41,
+                                        lineNumber: 50,
                                         columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _eveningFood.EveningFood), {
@@ -27590,7 +27642,7 @@ function GuestForm(props) {
                                         onGuestInfoUpdated: onGuestInfoUpdated
                                     }, void 0, false, {
                                         fileName: "ts/guestForm.tsx",
-                                        lineNumber: 43,
+                                        lineNumber: 52,
                                         columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _dietaryNeeds.DietaryNeeds), {
@@ -27598,7 +27650,7 @@ function GuestForm(props) {
                                         onGuestInfoUpdated: onGuestInfoUpdated
                                     }, void 0, false, {
                                         fileName: "ts/guestForm.tsx",
-                                        lineNumber: 45,
+                                        lineNumber: 54,
                                         columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _song.Song), {
@@ -27606,20 +27658,50 @@ function GuestForm(props) {
                                         onGuestInfoUpdated: onGuestInfoUpdated
                                     }, void 0, false, {
                                         fileName: "ts/guestForm.tsx",
-                                        lineNumber: 47,
+                                        lineNumber: 56,
                                         columnNumber: 21
                                     }, this)
                                 ]
                             }, void 0, true)
                         ]
-                    }, void 0, true, {
+                    }, guestInfo.id, true, {
                         fileName: "ts/guestForm.tsx",
-                        lineNumber: 31,
+                        lineNumber: 40,
                         columnNumber: 13
                     }, this))
             }, void 0, false, {
                 fileName: "ts/guestForm.tsx",
-                lineNumber: 30,
+                lineNumber: 39,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                id: "submit-container",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "button-container",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "button",
+                        onTouchStart: (_)=>{},
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "button",
+                            value: "Submit"
+                        }, void 0, false, {
+                            fileName: "ts/guestForm.tsx",
+                            lineNumber: 63,
+                            columnNumber: 21
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "ts/guestForm.tsx",
+                        lineNumber: 62,
+                        columnNumber: 17
+                    }, this)
+                }, void 0, false, {
+                    fileName: "ts/guestForm.tsx",
+                    lineNumber: 61,
+                    columnNumber: 13
+                }, this)
+            }, void 0, false, {
+                fileName: "ts/guestForm.tsx",
+                lineNumber: 60,
                 columnNumber: 9
             }, this)
         ]
@@ -27635,7 +27717,1172 @@ $RefreshReg$(_c, "GuestForm");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","lodash":"3qBDj","react/jsx-dev-runtime":"iTorj","./form-components/attendance":"4b2b8","./form-components/dessert":"jzAgz","./form-components/dietaryNeeds":"jhNG8","./form-components/eveningFood":"3mlzb","./form-components/mainCourse":"eqw1a","./form-components/song":"4x2e5","./form-components/starter":"4xVOb"}],"3qBDj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./form-components/attendance":"4b2b8","./form-components/dessert":"jzAgz","./form-components/dietaryNeeds":"jhNG8","./form-components/eveningFood":"3mlzb","./form-components/mainCourse":"eqw1a","./form-components/song":"4x2e5","./form-components/starter":"4xVOb","react":"21dqq","lodash":"3qBDj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4b2b8":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7a25 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$7a25.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Attendance", ()=>Attendance);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _shared = require("./shared");
+function Attendance(props) {
+    const guest = props.guest;
+    function changeAttendance(event) {
+        const newGuest = {
+            ...guest,
+            attendance: event.target.value == "true"
+        };
+        props.onGuestInfoUpdated(newGuest);
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "radio-label",
+                id: (0, _shared.idFor)("attendance-label", guest),
+                children: "Attendance:"
+            }, void 0, false, {
+                fileName: "ts/form-components/attendance.tsx",
+                lineNumber: 18,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "radio-group",
+                role: "radiogroup",
+                "aria-labelledby": (0, _shared.idFor)("attendance-label", guest),
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "radio",
+                                checked: guest.attendance == true,
+                                onChange: changeAttendance,
+                                name: (0, _shared.idFor)("attendance-radio", guest),
+                                value: "true",
+                                id: (0, _shared.idFor)("able-to-attend", guest)
+                            }, void 0, false, {
+                                fileName: "ts/form-components/attendance.tsx",
+                                lineNumber: 21,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: (0, _shared.idFor)("able-to-attend", guest),
+                                children: "I'd be delighted to attend ✅"
+                            }, void 0, false, {
+                                fileName: "ts/form-components/attendance.tsx",
+                                lineNumber: 22,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "ts/form-components/attendance.tsx",
+                        lineNumber: 20,
+                        columnNumber: 13
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "radio",
+                                checked: guest.attendance == false,
+                                onChange: changeAttendance,
+                                name: (0, _shared.idFor)("attendance-radio", guest),
+                                value: "false",
+                                id: (0, _shared.idFor)("unable-to-attend", guest)
+                            }, void 0, false, {
+                                fileName: "ts/form-components/attendance.tsx",
+                                lineNumber: 25,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: (0, _shared.idFor)("unable-to-attend", guest),
+                                children: "Regretfully, I'm unable to attend ❎"
+                            }, void 0, false, {
+                                fileName: "ts/form-components/attendance.tsx",
+                                lineNumber: 26,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "ts/form-components/attendance.tsx",
+                        lineNumber: 24,
+                        columnNumber: 13
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "ts/form-components/attendance.tsx",
+                lineNumber: 19,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true);
+}
+_c = Attendance;
+var _c;
+$RefreshReg$(_c, "Attendance");
+
+  $parcel$ReactRefreshHelpers$7a25.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./shared":"itRod","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"itRod":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "idFor", ()=>idFor);
+function idFor(base, guestInfo) {
+    return `${base}-${guestInfo.id}`;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jzAgz":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$60be = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$60be.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Dessert", ()=>Dessert);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _accessCodeEntry = require("../accessCodeEntry");
+var _shared = require("./shared");
+function Dessert(props) {
+    switch(props.guest.guestType){
+        case (0, _accessCodeEntry.GuestType).AllDay:
+            return allDayDessert(props);
+        case (0, _accessCodeEntry.GuestType).Child:
+            return childDessert(props);
+        case (0, _accessCodeEntry.GuestType).EveningOnly:
+            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {}, void 0, false);
+    }
+}
+_c = Dessert;
+function changeDessert(props) {
+    return (event)=>{
+        const newGuest = {
+            ...props.guest,
+            dessert: event.target.value
+        };
+        props.onGuestInfoUpdated(newGuest);
+    };
+}
+function dessertNotApplicable(props) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                    type: "radio",
+                    onChange: changeDessert(props),
+                    checked: props.guest.dessert == "NA",
+                    name: (0, _shared.idFor)("dessert-radio", props.guest),
+                    value: "NA",
+                    id: (0, _shared.idFor)("dessert-na", props.guest)
+                }, void 0, false, {
+                    fileName: "ts/form-components/dessert.tsx",
+                    lineNumber: 28,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                    htmlFor: (0, _shared.idFor)("dessert-na", props.guest),
+                    children: "I'd like an alternative due to dietary requirements \uD83D\uDE45"
+                }, void 0, false, {
+                    fileName: "ts/form-components/dessert.tsx",
+                    lineNumber: 29,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "ts/form-components/dessert.tsx",
+            lineNumber: 27,
+            columnNumber: 14
+        }, this)
+    }, void 0, false);
+}
+function allDayDessert(props) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "form-divider"
+            }, void 0, false, {
+                fileName: "ts/form-components/dessert.tsx",
+                lineNumber: 35,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "radio-label",
+                id: (0, _shared.idFor)("dessert-label", props.guest),
+                children: [
+                    "Dessert:",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "servedwith",
+                        children: "Served with fresh cream"
+                    }, void 0, false, {
+                        fileName: "ts/form-components/dessert.tsx",
+                        lineNumber: 38,
+                        columnNumber: 13
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "ts/form-components/dessert.tsx",
+                lineNumber: 36,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "radio-group",
+                role: "radiogroup",
+                "aria-labelledby": (0, _shared.idFor)("dessert-label", props.guest),
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "radio",
+                                onChange: changeDessert(props),
+                                checked: props.guest.dessert == "A",
+                                name: (0, _shared.idFor)("dessert-radio", props.guest),
+                                value: "A",
+                                id: (0, _shared.idFor)("dessert-tart", props.guest)
+                            }, void 0, false, {
+                                fileName: "ts/form-components/dessert.tsx",
+                                lineNumber: 42,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: (0, _shared.idFor)("dessert-tart", props.guest),
+                                children: "Traditional Tart Au Citron with Kirsch Marinated Black Cherries \uD83C\uDF4B \uD83C\uDF52"
+                            }, void 0, false, {
+                                fileName: "ts/form-components/dessert.tsx",
+                                lineNumber: 43,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "ts/form-components/dessert.tsx",
+                        lineNumber: 41,
+                        columnNumber: 13
+                    }, this),
+                    dessertNotApplicable(props)
+                ]
+            }, void 0, true, {
+                fileName: "ts/form-components/dessert.tsx",
+                lineNumber: 40,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true);
+}
+function childDessert(props) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "form-divider"
+            }, void 0, false, {
+                fileName: "ts/form-components/dessert.tsx",
+                lineNumber: 54,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "radio-label",
+                id: (0, _shared.idFor)("dessert-label", props.guest),
+                children: [
+                    "Dessert:",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "servedwith",
+                        children: "Served with sauces \uD83E\uDD37‍♂️"
+                    }, void 0, false, {
+                        fileName: "ts/form-components/dessert.tsx",
+                        lineNumber: 57,
+                        columnNumber: 13
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "ts/form-components/dessert.tsx",
+                lineNumber: 55,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "radio-group",
+                role: "radiogroup",
+                "aria-labelledby": (0, _shared.idFor)("dessert-label", props.guest),
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "radio",
+                                onChange: changeDessert(props),
+                                checked: props.guest.dessert == "A",
+                                name: (0, _shared.idFor)("dessert-radio", props.guest),
+                                value: "A",
+                                id: (0, _shared.idFor)("dessert-ice-cream", props.guest)
+                            }, void 0, false, {
+                                fileName: "ts/form-components/dessert.tsx",
+                                lineNumber: 61,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: (0, _shared.idFor)("dessert-ice-cream", props.guest),
+                                children: "Ice Cream Surprise \uD83C\uDF68\uD83E\uDD14"
+                            }, void 0, false, {
+                                fileName: "ts/form-components/dessert.tsx",
+                                lineNumber: 62,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "ts/form-components/dessert.tsx",
+                        lineNumber: 60,
+                        columnNumber: 13
+                    }, this),
+                    dessertNotApplicable(props)
+                ]
+            }, void 0, true, {
+                fileName: "ts/form-components/dessert.tsx",
+                lineNumber: 59,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true);
+}
+var _c;
+$RefreshReg$(_c, "Dessert");
+
+  $parcel$ReactRefreshHelpers$60be.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../accessCodeEntry":"bhkTu","./shared":"itRod","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jhNG8":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4d1e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4d1e.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "DietaryNeeds", ()=>DietaryNeeds);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _shared = require("./shared");
+function DietaryNeeds(props) {
+    const guest = props.guest;
+    function onDietaryNeedsChange(e) {
+        const newGuest = {
+            ...guest,
+            dietaryNeeds: e.target.value
+        };
+        props.onGuestInfoUpdated(newGuest);
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "form-divider"
+            }, void 0, false, {
+                fileName: "ts/form-components/dietaryNeeds.tsx",
+                lineNumber: 17,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                htmlFor: (0, _shared.idFor)("dietary-needs", guest),
+                children: "Dietary restrictions or allergens:"
+            }, void 0, false, {
+                fileName: "ts/form-components/dietaryNeeds.tsx",
+                lineNumber: 18,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                onChange: onDietaryNeedsChange,
+                id: (0, _shared.idFor)("dietary-needs", guest),
+                rows: 5,
+                placeholder: "Is there anything we should let the caterers know about?",
+                value: props.guest.dietaryNeeds
+            }, void 0, false, {
+                fileName: "ts/form-components/dietaryNeeds.tsx",
+                lineNumber: 19,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true);
+}
+_c = DietaryNeeds;
+var _c;
+$RefreshReg$(_c, "DietaryNeeds");
+
+  $parcel$ReactRefreshHelpers$4d1e.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./shared":"itRod","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3mlzb":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$fa9b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$fa9b.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "EveningFood", ()=>EveningFood);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _shared = require("./shared");
+function EveningFood(props) {
+    const guest = props.guest;
+    function onChangeEveningFood(e) {
+        const newGuest = {
+            ...guest,
+            eveningFood: e.target.value
+        };
+        props.onGuestInfoUpdated(newGuest);
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "form-divider"
+            }, void 0, false, {
+                fileName: "ts/form-components/eveningFood.tsx",
+                lineNumber: 17,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "radio-label",
+                id: (0, _shared.idFor)("evening-food-label", guest),
+                children: "Evening food:"
+            }, void 0, false, {
+                fileName: "ts/form-components/eveningFood.tsx",
+                lineNumber: 18,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "radio-group",
+                role: "radiogroup",
+                "aria-labelledby": (0, _shared.idFor)("evening-food-label", guest),
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "radio",
+                                onChange: onChangeEveningFood,
+                                checked: props.guest.eveningFood == "A",
+                                name: (0, _shared.idFor)("evening-radio", guest),
+                                value: "A",
+                                id: (0, _shared.idFor)("evening-butties", guest)
+                            }, void 0, false, {
+                                fileName: "ts/form-components/eveningFood.tsx",
+                                lineNumber: 21,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: (0, _shared.idFor)("evening-butties", guest),
+                                children: "I'm happy with either a Fish Finger Buttie \uD83D\uDC1F or a Halloumi Buttie \uD83E\uDDC0"
+                            }, void 0, false, {
+                                fileName: "ts/form-components/eveningFood.tsx",
+                                lineNumber: 22,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "ts/form-components/eveningFood.tsx",
+                        lineNumber: 20,
+                        columnNumber: 13
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "radio",
+                                onChange: onChangeEveningFood,
+                                checked: props.guest.eveningFood == "NA",
+                                name: (0, _shared.idFor)("evening-radio", guest),
+                                value: "NA",
+                                id: (0, _shared.idFor)("evening-na", guest)
+                            }, void 0, false, {
+                                fileName: "ts/form-components/eveningFood.tsx",
+                                lineNumber: 25,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: (0, _shared.idFor)("evening-na", guest),
+                                children: "I'd like an alternative due to dietary requirements \uD83D\uDE45"
+                            }, void 0, false, {
+                                fileName: "ts/form-components/eveningFood.tsx",
+                                lineNumber: 26,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "ts/form-components/eveningFood.tsx",
+                        lineNumber: 24,
+                        columnNumber: 13
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "ts/form-components/eveningFood.tsx",
+                lineNumber: 19,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true);
+}
+_c = EveningFood;
+var _c;
+$RefreshReg$(_c, "EveningFood");
+
+  $parcel$ReactRefreshHelpers$fa9b.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./shared":"itRod","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eqw1a":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1855 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1855.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "MainCourse", ()=>MainCourse);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _accessCodeEntry = require("../accessCodeEntry");
+var _shared = require("./shared");
+function MainCourse(props) {
+    switch(props.guest.guestType){
+        case (0, _accessCodeEntry.GuestType).AllDay:
+            return pie(props);
+        case (0, _accessCodeEntry.GuestType).Child:
+            return childMain(props);
+        case (0, _accessCodeEntry.GuestType).EveningOnly:
+            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {}, void 0, false);
+    }
+}
+_c = MainCourse;
+function onMainCourseChange(props) {
+    return (e)=>{
+        const newGuest = {
+            ...props.guest,
+            main: e.target.value
+        };
+        props.onGuestInfoUpdated(newGuest);
+    };
+}
+function mainNotApplicable(props) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                    onChange: onMainCourseChange(props),
+                    checked: props.guest.main == "NA",
+                    type: "radio",
+                    name: (0, _shared.idFor)("main-radio", props.guest),
+                    value: "NA",
+                    id: (0, _shared.idFor)("main-na", props.guest)
+                }, void 0, false, {
+                    fileName: "ts/form-components/mainCourse.tsx",
+                    lineNumber: 28,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                    htmlFor: (0, _shared.idFor)("main-na", props.guest),
+                    children: "I'd like an alternative due to dietary requirements \uD83D\uDE45"
+                }, void 0, false, {
+                    fileName: "ts/form-components/mainCourse.tsx",
+                    lineNumber: 29,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "ts/form-components/mainCourse.tsx",
+            lineNumber: 27,
+            columnNumber: 14
+        }, this)
+    }, void 0, false);
+}
+function pie(props) {
+    const guest = props.guest;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "form-divider"
+            }, void 0, false, {
+                fileName: "ts/form-components/mainCourse.tsx",
+                lineNumber: 36,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "radio-label",
+                id: (0, _shared.idFor)("pie-label", guest),
+                children: [
+                    "Pie:",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "servedwith",
+                        children: "Served with a Red Wine Gravy, Mustard Mash, Mac & Cheese and Vegetables"
+                    }, void 0, false, {
+                        fileName: "ts/form-components/mainCourse.tsx",
+                        lineNumber: 39,
+                        columnNumber: 13
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "ts/form-components/mainCourse.tsx",
+                lineNumber: 37,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "radio-group",
+                role: "radiogroup",
+                "aria-labelledby": (0, _shared.idFor)("pie-label", guest),
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                onChange: onMainCourseChange(props),
+                                checked: guest.main == "A",
+                                type: "radio",
+                                name: (0, _shared.idFor)("main-radio", guest),
+                                value: "A",
+                                id: (0, _shared.idFor)("pie-chicken", guest)
+                            }, void 0, false, {
+                                fileName: "ts/form-components/mainCourse.tsx",
+                                lineNumber: 43,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: (0, _shared.idFor)("pie-chicken", guest),
+                                children: "Chicken & Leek \uD83D\uDC14"
+                            }, void 0, false, {
+                                fileName: "ts/form-components/mainCourse.tsx",
+                                lineNumber: 44,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "ts/form-components/mainCourse.tsx",
+                        lineNumber: 42,
+                        columnNumber: 13
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                onChange: onMainCourseChange(props),
+                                checked: guest.main == "B",
+                                type: "radio",
+                                name: (0, _shared.idFor)("main-radio", guest),
+                                value: "B",
+                                id: (0, _shared.idFor)("pie-beef", guest)
+                            }, void 0, false, {
+                                fileName: "ts/form-components/mainCourse.tsx",
+                                lineNumber: 47,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: (0, _shared.idFor)("pie-beef", guest),
+                                children: "Steak & Merlot \uD83D\uDC2E \uD83C\uDF77"
+                            }, void 0, false, {
+                                fileName: "ts/form-components/mainCourse.tsx",
+                                lineNumber: 48,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "ts/form-components/mainCourse.tsx",
+                        lineNumber: 46,
+                        columnNumber: 13
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                onChange: onMainCourseChange(props),
+                                checked: guest.main == "C",
+                                type: "radio",
+                                name: (0, _shared.idFor)("main-radio", guest),
+                                value: "C",
+                                id: (0, _shared.idFor)("pie-cheese", guest)
+                            }, void 0, false, {
+                                fileName: "ts/form-components/mainCourse.tsx",
+                                lineNumber: 51,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: (0, _shared.idFor)("pie-cheese", guest),
+                                children: "Cheese & Onion \uD83E\uDDC0 \uD83E\uDDC5"
+                            }, void 0, false, {
+                                fileName: "ts/form-components/mainCourse.tsx",
+                                lineNumber: 52,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "ts/form-components/mainCourse.tsx",
+                        lineNumber: 50,
+                        columnNumber: 13
+                    }, this),
+                    mainNotApplicable(props)
+                ]
+            }, void 0, true, {
+                fileName: "ts/form-components/mainCourse.tsx",
+                lineNumber: 41,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true);
+}
+function childMain(props) {
+    const guest = props.guest;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "form-divider"
+            }, void 0, false, {
+                fileName: "ts/form-components/mainCourse.tsx",
+                lineNumber: 62,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "radio-label",
+                id: (0, _shared.idFor)("main-label", guest),
+                children: "Main:"
+            }, void 0, false, {
+                fileName: "ts/form-components/mainCourse.tsx",
+                lineNumber: 63,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "radio-group",
+                role: "radiogroup",
+                "aria-labelledby": (0, _shared.idFor)("main-label", guest),
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                onChange: onMainCourseChange(props),
+                                checked: guest.main == "A",
+                                type: "radio",
+                                name: (0, _shared.idFor)("main-radio", guest),
+                                value: "A",
+                                id: (0, _shared.idFor)("main-fish", guest)
+                            }, void 0, false, {
+                                fileName: "ts/form-components/mainCourse.tsx",
+                                lineNumber: 68,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: (0, _shared.idFor)("main-fish", guest),
+                                children: [
+                                    "Fish Goujons \uD83D\uDC1F",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "servedwith",
+                                        children: "Served with Chunky Chips and Mushy Peas"
+                                    }, void 0, false, {
+                                        fileName: "ts/form-components/mainCourse.tsx",
+                                        lineNumber: 70,
+                                        columnNumber: 21
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "ts/form-components/mainCourse.tsx",
+                                lineNumber: 69,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "ts/form-components/mainCourse.tsx",
+                        lineNumber: 67,
+                        columnNumber: 13
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                onChange: onMainCourseChange(props),
+                                checked: guest.main == "B",
+                                type: "radio",
+                                name: (0, _shared.idFor)("main-radio", guest),
+                                value: "B",
+                                id: (0, _shared.idFor)("main-sausages", guest)
+                            }, void 0, false, {
+                                fileName: "ts/form-components/mainCourse.tsx",
+                                lineNumber: 74,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: (0, _shared.idFor)("main-sausages", guest),
+                                children: [
+                                    "Pork Sausages with Creamy Buttered Mash",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "servedwith",
+                                        children: "Served with Peas and Gravy"
+                                    }, void 0, false, {
+                                        fileName: "ts/form-components/mainCourse.tsx",
+                                        lineNumber: 76,
+                                        columnNumber: 21
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "ts/form-components/mainCourse.tsx",
+                                lineNumber: 75,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "ts/form-components/mainCourse.tsx",
+                        lineNumber: 73,
+                        columnNumber: 13
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                onChange: onMainCourseChange(props),
+                                checked: guest.main == "C",
+                                type: "radio",
+                                name: (0, _shared.idFor)("main-radio", guest),
+                                value: "C",
+                                id: (0, _shared.idFor)("main-burger", guest)
+                            }, void 0, false, {
+                                fileName: "ts/form-components/mainCourse.tsx",
+                                lineNumber: 80,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: (0, _shared.idFor)("main-burger", guest),
+                                children: [
+                                    "Bean Burger",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "servedwith",
+                                        children: "Served with Sweet Potato Wedges and Baked Beans"
+                                    }, void 0, false, {
+                                        fileName: "ts/form-components/mainCourse.tsx",
+                                        lineNumber: 82,
+                                        columnNumber: 21
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "ts/form-components/mainCourse.tsx",
+                                lineNumber: 81,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "ts/form-components/mainCourse.tsx",
+                        lineNumber: 79,
+                        columnNumber: 13
+                    }, this),
+                    mainNotApplicable(props)
+                ]
+            }, void 0, true, {
+                fileName: "ts/form-components/mainCourse.tsx",
+                lineNumber: 66,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true);
+}
+var _c;
+$RefreshReg$(_c, "MainCourse");
+
+  $parcel$ReactRefreshHelpers$1855.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../accessCodeEntry":"bhkTu","./shared":"itRod","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4x2e5":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ae13 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ae13.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Song", ()=>Song);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _accessCodeEntry = require("../accessCodeEntry");
+var _shared = require("./shared");
+function Song(props) {
+    const guest = props.guest;
+    if (guest.guestType == (0, _accessCodeEntry.GuestType).Child) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {}, void 0, false);
+    else {
+        function onSongChange(e) {
+            const newGuest = {
+                ...guest,
+                song: e.target.value
+            };
+            props.onGuestInfoUpdated(newGuest);
+        }
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-divider"
+                }, void 0, false, {
+                    fileName: "ts/form-components/song.tsx",
+                    lineNumber: 21,
+                    columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                    htmlFor: (0, _shared.idFor)("song", guest),
+                    children: "What song would get you on the dance-floor?"
+                }, void 0, false, {
+                    fileName: "ts/form-components/song.tsx",
+                    lineNumber: 22,
+                    columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                    onChange: onSongChange,
+                    value: guest.song,
+                    id: (0, _shared.idFor)("song", guest),
+                    rows: 5,
+                    placeholder: "Feel free to add a few \uD83D\uDC83..."
+                }, void 0, false, {
+                    fileName: "ts/form-components/song.tsx",
+                    lineNumber: 23,
+                    columnNumber: 13
+                }, this)
+            ]
+        }, void 0, true);
+    }
+}
+_c = Song;
+var _c;
+$RefreshReg$(_c, "Song");
+
+  $parcel$ReactRefreshHelpers$ae13.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../accessCodeEntry":"bhkTu","./shared":"itRod","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4xVOb":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$6c14 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$6c14.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Starter", ()=>Starter);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _accessCodeEntry = require("../accessCodeEntry");
+var _shared = require("./shared");
+function Starter(props) {
+    switch(props.guest.guestType){
+        case (0, _accessCodeEntry.GuestType).AllDay:
+            return allDayStarter(props);
+        case (0, _accessCodeEntry.GuestType).Child:
+            return childStarter(props);
+        case (0, _accessCodeEntry.GuestType).EveningOnly:
+            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {}, void 0, false);
+    }
+}
+_c = Starter;
+function onStarterChange(props) {
+    return (e)=>{
+        const newGuest = {
+            ...props.guest,
+            starter: e.target.value
+        };
+        props.onGuestInfoUpdated(newGuest);
+    };
+}
+function starterNotApplicable(props) {
+    const guest = props.guest;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                    checked: guest.starter == "NA",
+                    onChange: onStarterChange(props),
+                    type: "radio",
+                    name: (0, _shared.idFor)("starter-radio", guest),
+                    value: "NA",
+                    id: (0, _shared.idFor)("starter-na", guest)
+                }, void 0, false, {
+                    fileName: "ts/form-components/starter.tsx",
+                    lineNumber: 29,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                    htmlFor: (0, _shared.idFor)("starter-na", guest),
+                    children: "I'd like an alternative due to dietary requirements \uD83D\uDE45"
+                }, void 0, false, {
+                    fileName: "ts/form-components/starter.tsx",
+                    lineNumber: 30,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "ts/form-components/starter.tsx",
+            lineNumber: 28,
+            columnNumber: 14
+        }, this)
+    }, void 0, false);
+}
+function allDayStarter(props) {
+    const guest = props.guest;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "form-divider"
+            }, void 0, false, {
+                fileName: "ts/form-components/starter.tsx",
+                lineNumber: 37,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "radio-label",
+                id: (0, _shared.idFor)("starter-label", guest),
+                children: [
+                    "Starter:",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "servedwith",
+                        children: "Served with Bread Rolls and Butter"
+                    }, void 0, false, {
+                        fileName: "ts/form-components/starter.tsx",
+                        lineNumber: 39,
+                        columnNumber: 13
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "ts/form-components/starter.tsx",
+                lineNumber: 38,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "radio-group",
+                role: "radiogroup",
+                "aria-labelledby": (0, _shared.idFor)("starter-label", guest),
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                checked: guest.starter == "A",
+                                onChange: onStarterChange(props),
+                                type: "radio",
+                                name: (0, _shared.idFor)("starter-radio", guest),
+                                value: "A",
+                                id: (0, _shared.idFor)("starter-soup", guest)
+                            }, void 0, false, {
+                                fileName: "ts/form-components/starter.tsx",
+                                lineNumber: 43,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: (0, _shared.idFor)("starter-soup", guest),
+                                children: [
+                                    "Leek and Potato Soup garnished with Deep Fried Leeks \uD83E\uDD54",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "dietary",
+                                        children: "Egg Free, Gluten Free, Nut Trace Free"
+                                    }, void 0, false, {
+                                        fileName: "ts/form-components/starter.tsx",
+                                        lineNumber: 46,
+                                        columnNumber: 21
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "ts/form-components/starter.tsx",
+                                lineNumber: 44,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "ts/form-components/starter.tsx",
+                        lineNumber: 42,
+                        columnNumber: 13
+                    }, this),
+                    starterNotApplicable(props)
+                ]
+            }, void 0, true, {
+                fileName: "ts/form-components/starter.tsx",
+                lineNumber: 41,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true);
+}
+function childStarter(props) {
+    const guest = props.guest;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "form-divider"
+            }, void 0, false, {
+                fileName: "ts/form-components/starter.tsx",
+                lineNumber: 57,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "radio-label",
+                id: (0, _shared.idFor)("starter-label", guest),
+                children: "Starter:"
+            }, void 0, false, {
+                fileName: "ts/form-components/starter.tsx",
+                lineNumber: 58,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "radio-group",
+                role: "radiogroup",
+                "aria-labelledby": (0, _shared.idFor)("starter-label", guest),
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                checked: guest.starter == "A",
+                                onChange: onStarterChange(props),
+                                type: "radio",
+                                name: (0, _shared.idFor)("starter-radio", guest),
+                                value: "A",
+                                id: (0, _shared.idFor)("starter-maccheese", guest)
+                            }, void 0, false, {
+                                fileName: "ts/form-components/starter.tsx",
+                                lineNumber: 62,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: (0, _shared.idFor)("starter-maccheese", guest),
+                                children: "Mini Mac & Cheese \uD83E\uDDC0"
+                            }, void 0, false, {
+                                fileName: "ts/form-components/starter.tsx",
+                                lineNumber: 63,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "ts/form-components/starter.tsx",
+                        lineNumber: 61,
+                        columnNumber: 13
+                    }, this),
+                    starterNotApplicable(props)
+                ]
+            }, void 0, true, {
+                fileName: "ts/form-components/starter.tsx",
+                lineNumber: 60,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true);
+}
+var _c;
+$RefreshReg$(_c, "Starter");
+
+  $parcel$ReactRefreshHelpers$6c14.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../accessCodeEntry":"bhkTu","./shared":"itRod","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3qBDj":[function(require,module,exports) {
 var global = arguments[3];
 (function() {
     /** Used as a safe reference for `undefined` in pre-ES5 environments. */ var undefined;
@@ -41867,1171 +43114,6 @@ var global = arguments[3];
     root._ = _;
 }).call(this);
 
-},{}],"4b2b8":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$7a25 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$7a25.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Attendance", ()=>Attendance);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _shared = require("./shared");
-function Attendance(props) {
-    const guest = props.guest;
-    function changeAttendance(event) {
-        const newGuest = {
-            ...guest,
-            attendance: event.target.value == "true"
-        };
-        props.onGuestInfoUpdated(newGuest);
-    }
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "radio-label",
-                id: (0, _shared.idFor)("attendance-label", guest),
-                children: "Attendance:"
-            }, void 0, false, {
-                fileName: "ts/form-components/attendance.tsx",
-                lineNumber: 18,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "radio-group",
-                role: "radiogroup",
-                "aria-labelledby": (0, _shared.idFor)("attendance-label", guest),
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                type: "radio",
-                                checked: guest.attendance == true,
-                                onChange: changeAttendance,
-                                name: (0, _shared.idFor)("attendance-radio", guest),
-                                value: "true",
-                                id: (0, _shared.idFor)("able-to-attend", guest)
-                            }, void 0, false, {
-                                fileName: "ts/form-components/attendance.tsx",
-                                lineNumber: 21,
-                                columnNumber: 17
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: (0, _shared.idFor)("able-to-attend", guest),
-                                children: "I'd be delighted to attend ✅"
-                            }, void 0, false, {
-                                fileName: "ts/form-components/attendance.tsx",
-                                lineNumber: 22,
-                                columnNumber: 17
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "ts/form-components/attendance.tsx",
-                        lineNumber: 20,
-                        columnNumber: 13
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                type: "radio",
-                                checked: guest.attendance == false,
-                                onChange: changeAttendance,
-                                name: (0, _shared.idFor)("attendance-radio", guest),
-                                value: "false",
-                                id: (0, _shared.idFor)("unable-to-attend", guest)
-                            }, void 0, false, {
-                                fileName: "ts/form-components/attendance.tsx",
-                                lineNumber: 25,
-                                columnNumber: 17
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: (0, _shared.idFor)("unable-to-attend", guest),
-                                children: "Regretfully, I'm unable to attend ❎"
-                            }, void 0, false, {
-                                fileName: "ts/form-components/attendance.tsx",
-                                lineNumber: 26,
-                                columnNumber: 17
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "ts/form-components/attendance.tsx",
-                        lineNumber: 24,
-                        columnNumber: 13
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "ts/form-components/attendance.tsx",
-                lineNumber: 19,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true);
-}
-_c = Attendance;
-var _c;
-$RefreshReg$(_c, "Attendance");
-
-  $parcel$ReactRefreshHelpers$7a25.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./shared":"itRod","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"itRod":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "idFor", ()=>idFor);
-function idFor(base, guestInfo) {
-    return `${base}-${guestInfo.id}`;
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jzAgz":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$60be = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$60be.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Dessert", ()=>Dessert);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _accessCodeEntry = require("../accessCodeEntry");
-var _shared = require("./shared");
-function Dessert(props) {
-    switch(props.guest.guestType){
-        case (0, _accessCodeEntry.GuestType).AllDay:
-            return allDayDessert(props);
-        case (0, _accessCodeEntry.GuestType).Child:
-            return childDessert(props);
-        case (0, _accessCodeEntry.GuestType).EveningOnly:
-            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {}, void 0, false);
-    }
-}
-_c = Dessert;
-function changeDessert(props) {
-    return (event)=>{
-        const newGuest = {
-            ...props.guest,
-            dessert: event.target.value
-        };
-        props.onGuestInfoUpdated(newGuest);
-    };
-}
-function dessertNotApplicable(props) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                    type: "radio",
-                    onChange: changeDessert(props),
-                    checked: props.guest.dessert == "NA",
-                    name: (0, _shared.idFor)("dessert-radio", props.guest),
-                    value: "NA",
-                    id: (0, _shared.idFor)("dessert-na", props.guest)
-                }, void 0, false, {
-                    fileName: "ts/form-components/dessert.tsx",
-                    lineNumber: 28,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                    htmlFor: (0, _shared.idFor)("dessert-na", props.guest),
-                    children: "I'd like an alternative due to dietary requirements \uD83D\uDE45"
-                }, void 0, false, {
-                    fileName: "ts/form-components/dessert.tsx",
-                    lineNumber: 29,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "ts/form-components/dessert.tsx",
-            lineNumber: 27,
-            columnNumber: 14
-        }, this)
-    }, void 0, false);
-}
-function allDayDessert(props) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "form-divider"
-            }, void 0, false, {
-                fileName: "ts/form-components/dessert.tsx",
-                lineNumber: 35,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "radio-label",
-                id: (0, _shared.idFor)("dessert-label", props.guest),
-                children: [
-                    "Dessert:",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "servedwith",
-                        children: "Served with fresh cream"
-                    }, void 0, false, {
-                        fileName: "ts/form-components/dessert.tsx",
-                        lineNumber: 38,
-                        columnNumber: 13
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "ts/form-components/dessert.tsx",
-                lineNumber: 36,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "radio-group",
-                role: "radiogroup",
-                "aria-labelledby": (0, _shared.idFor)("dessert-label", props.guest),
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                type: "radio",
-                                onChange: changeDessert(props),
-                                checked: props.guest.dessert == "A",
-                                name: (0, _shared.idFor)("dessert-radio", props.guest),
-                                value: "A",
-                                id: (0, _shared.idFor)("dessert-tart", props.guest)
-                            }, void 0, false, {
-                                fileName: "ts/form-components/dessert.tsx",
-                                lineNumber: 42,
-                                columnNumber: 17
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: (0, _shared.idFor)("dessert-tart", props.guest),
-                                children: "Traditional Tart Au Citron with Kirsch Marinated Black Cherries \uD83C\uDF4B \uD83C\uDF52"
-                            }, void 0, false, {
-                                fileName: "ts/form-components/dessert.tsx",
-                                lineNumber: 43,
-                                columnNumber: 17
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "ts/form-components/dessert.tsx",
-                        lineNumber: 41,
-                        columnNumber: 13
-                    }, this),
-                    dessertNotApplicable(props)
-                ]
-            }, void 0, true, {
-                fileName: "ts/form-components/dessert.tsx",
-                lineNumber: 40,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true);
-}
-function childDessert(props) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "form-divider"
-            }, void 0, false, {
-                fileName: "ts/form-components/dessert.tsx",
-                lineNumber: 54,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "radio-label",
-                id: (0, _shared.idFor)("dessert-label", props.guest),
-                children: [
-                    "Dessert:",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "servedwith",
-                        children: "Served with sauces \uD83E\uDD37‍♂️"
-                    }, void 0, false, {
-                        fileName: "ts/form-components/dessert.tsx",
-                        lineNumber: 57,
-                        columnNumber: 13
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "ts/form-components/dessert.tsx",
-                lineNumber: 55,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "radio-group",
-                role: "radiogroup",
-                "aria-labelledby": (0, _shared.idFor)("dessert-label", props.guest),
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                type: "radio",
-                                onChange: changeDessert(props),
-                                checked: props.guest.dessert == "A",
-                                name: (0, _shared.idFor)("dessert-radio", props.guest),
-                                value: "A",
-                                id: (0, _shared.idFor)("dessert-ice-cream", props.guest)
-                            }, void 0, false, {
-                                fileName: "ts/form-components/dessert.tsx",
-                                lineNumber: 61,
-                                columnNumber: 17
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: (0, _shared.idFor)("dessert-ice-cream", props.guest),
-                                children: "Ice Cream Surprise \uD83C\uDF68\uD83E\uDD14"
-                            }, void 0, false, {
-                                fileName: "ts/form-components/dessert.tsx",
-                                lineNumber: 62,
-                                columnNumber: 17
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "ts/form-components/dessert.tsx",
-                        lineNumber: 60,
-                        columnNumber: 13
-                    }, this),
-                    dessertNotApplicable(props)
-                ]
-            }, void 0, true, {
-                fileName: "ts/form-components/dessert.tsx",
-                lineNumber: 59,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true);
-}
-var _c;
-$RefreshReg$(_c, "Dessert");
-
-  $parcel$ReactRefreshHelpers$60be.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../accessCodeEntry":"bhkTu","./shared":"itRod","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jhNG8":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$4d1e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$4d1e.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "DietaryNeeds", ()=>DietaryNeeds);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _shared = require("./shared");
-function DietaryNeeds(props) {
-    const guest = props.guest;
-    function onDietaryNeedsChange(e) {
-        const newGuest = {
-            ...guest,
-            dietaryNeeds: e.target.value
-        };
-        props.onGuestInfoUpdated(newGuest);
-    }
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "form-divider"
-            }, void 0, false, {
-                fileName: "ts/form-components/dietaryNeeds.tsx",
-                lineNumber: 17,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                htmlFor: (0, _shared.idFor)("dietary-needs", guest),
-                children: "Additional dietary needs or allergens:"
-            }, void 0, false, {
-                fileName: "ts/form-components/dietaryNeeds.tsx",
-                lineNumber: 18,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
-                onChange: onDietaryNeedsChange,
-                id: (0, _shared.idFor)("dietary-needs", guest),
-                rows: 5,
-                placeholder: "Is there anything we should let the caterers know about?",
-                value: props.guest.dietaryNeeds
-            }, void 0, false, {
-                fileName: "ts/form-components/dietaryNeeds.tsx",
-                lineNumber: 19,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true);
-}
-_c = DietaryNeeds;
-var _c;
-$RefreshReg$(_c, "DietaryNeeds");
-
-  $parcel$ReactRefreshHelpers$4d1e.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./shared":"itRod","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3mlzb":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$fa9b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$fa9b.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "EveningFood", ()=>EveningFood);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _shared = require("./shared");
-function EveningFood(props) {
-    const guest = props.guest;
-    function onChangeEveningFood(e) {
-        const newGuest = {
-            ...guest,
-            eveningFood: e.target.value
-        };
-        props.onGuestInfoUpdated(newGuest);
-    }
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "form-divider"
-            }, void 0, false, {
-                fileName: "ts/form-components/eveningFood.tsx",
-                lineNumber: 17,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "radio-label",
-                id: (0, _shared.idFor)("evening-food-label", guest),
-                children: "Evening food:"
-            }, void 0, false, {
-                fileName: "ts/form-components/eveningFood.tsx",
-                lineNumber: 18,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "radio-group",
-                role: "radiogroup",
-                "aria-labelledby": (0, _shared.idFor)("evening-food-label", guest),
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                type: "radio",
-                                onChange: onChangeEveningFood,
-                                checked: props.guest.eveningFood == "A",
-                                name: (0, _shared.idFor)("evening-radio", guest),
-                                value: "A",
-                                id: (0, _shared.idFor)("evening-butties", guest)
-                            }, void 0, false, {
-                                fileName: "ts/form-components/eveningFood.tsx",
-                                lineNumber: 21,
-                                columnNumber: 17
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: (0, _shared.idFor)("evening-butties", guest),
-                                children: "I'm happy with either a Fish Finger Buttie \uD83D\uDC1F or a Halloumi Buttie \uD83E\uDDC0"
-                            }, void 0, false, {
-                                fileName: "ts/form-components/eveningFood.tsx",
-                                lineNumber: 22,
-                                columnNumber: 17
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "ts/form-components/eveningFood.tsx",
-                        lineNumber: 20,
-                        columnNumber: 13
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                type: "radio",
-                                onChange: onChangeEveningFood,
-                                checked: props.guest.eveningFood == "NA",
-                                name: (0, _shared.idFor)("evening-radio", guest),
-                                value: "NA",
-                                id: (0, _shared.idFor)("evening-na", guest)
-                            }, void 0, false, {
-                                fileName: "ts/form-components/eveningFood.tsx",
-                                lineNumber: 25,
-                                columnNumber: 17
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: (0, _shared.idFor)("evening-na", guest),
-                                children: "I'd like an alternative due to dietary requirements \uD83D\uDE45"
-                            }, void 0, false, {
-                                fileName: "ts/form-components/eveningFood.tsx",
-                                lineNumber: 26,
-                                columnNumber: 17
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "ts/form-components/eveningFood.tsx",
-                        lineNumber: 24,
-                        columnNumber: 13
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "ts/form-components/eveningFood.tsx",
-                lineNumber: 19,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true);
-}
-_c = EveningFood;
-var _c;
-$RefreshReg$(_c, "EveningFood");
-
-  $parcel$ReactRefreshHelpers$fa9b.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./shared":"itRod","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eqw1a":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$1855 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$1855.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "MainCourse", ()=>MainCourse);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _accessCodeEntry = require("../accessCodeEntry");
-var _shared = require("./shared");
-function MainCourse(props) {
-    switch(props.guest.guestType){
-        case (0, _accessCodeEntry.GuestType).AllDay:
-            return pie(props);
-        case (0, _accessCodeEntry.GuestType).Child:
-            return childMain(props);
-        case (0, _accessCodeEntry.GuestType).EveningOnly:
-            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {}, void 0, false);
-    }
-}
-_c = MainCourse;
-function onMainCourseChange(props) {
-    return (e)=>{
-        const newGuest = {
-            ...props.guest,
-            main: e.target.value
-        };
-        props.onGuestInfoUpdated(newGuest);
-    };
-}
-function mainNotApplicable(props) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                    onChange: onMainCourseChange(props),
-                    checked: props.guest.main == "NA",
-                    type: "radio",
-                    name: (0, _shared.idFor)("main-radio", props.guest),
-                    value: "NA",
-                    id: (0, _shared.idFor)("main-na", props.guest)
-                }, void 0, false, {
-                    fileName: "ts/form-components/mainCourse.tsx",
-                    lineNumber: 28,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                    htmlFor: (0, _shared.idFor)("main-na", props.guest),
-                    children: "I'd like an alternative due to dietary requirements \uD83D\uDE45"
-                }, void 0, false, {
-                    fileName: "ts/form-components/mainCourse.tsx",
-                    lineNumber: 29,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "ts/form-components/mainCourse.tsx",
-            lineNumber: 27,
-            columnNumber: 14
-        }, this)
-    }, void 0, false);
-}
-function pie(props) {
-    const guest = props.guest;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "form-divider"
-            }, void 0, false, {
-                fileName: "ts/form-components/mainCourse.tsx",
-                lineNumber: 36,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "radio-label",
-                id: (0, _shared.idFor)("pie-label", guest),
-                children: [
-                    "Pie:",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "servedwith",
-                        children: "Served with a Red Wine Gravy, Mustard Mash, Mac & Cheese and Vegetables"
-                    }, void 0, false, {
-                        fileName: "ts/form-components/mainCourse.tsx",
-                        lineNumber: 39,
-                        columnNumber: 13
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "ts/form-components/mainCourse.tsx",
-                lineNumber: 37,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "radio-group",
-                role: "radiogroup",
-                "aria-labelledby": (0, _shared.idFor)("pie-label", guest),
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                onChange: onMainCourseChange(props),
-                                checked: guest.main == "A",
-                                type: "radio",
-                                name: (0, _shared.idFor)("main-radio", guest),
-                                value: "A",
-                                id: (0, _shared.idFor)("pie-chicken", guest)
-                            }, void 0, false, {
-                                fileName: "ts/form-components/mainCourse.tsx",
-                                lineNumber: 43,
-                                columnNumber: 17
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: (0, _shared.idFor)("pie-chicken", guest),
-                                children: "Chicken & Leek \uD83D\uDC14"
-                            }, void 0, false, {
-                                fileName: "ts/form-components/mainCourse.tsx",
-                                lineNumber: 44,
-                                columnNumber: 17
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "ts/form-components/mainCourse.tsx",
-                        lineNumber: 42,
-                        columnNumber: 13
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                onChange: onMainCourseChange(props),
-                                checked: guest.main == "B",
-                                type: "radio",
-                                name: (0, _shared.idFor)("main-radio", guest),
-                                value: "B",
-                                id: (0, _shared.idFor)("pie-beef", guest)
-                            }, void 0, false, {
-                                fileName: "ts/form-components/mainCourse.tsx",
-                                lineNumber: 47,
-                                columnNumber: 17
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: (0, _shared.idFor)("pie-beef", guest),
-                                children: "Steak & Merlot \uD83D\uDC2E \uD83C\uDF77"
-                            }, void 0, false, {
-                                fileName: "ts/form-components/mainCourse.tsx",
-                                lineNumber: 48,
-                                columnNumber: 17
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "ts/form-components/mainCourse.tsx",
-                        lineNumber: 46,
-                        columnNumber: 13
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                onChange: onMainCourseChange(props),
-                                checked: guest.main == "C",
-                                type: "radio",
-                                name: (0, _shared.idFor)("main-radio", guest),
-                                value: "C",
-                                id: (0, _shared.idFor)("pie-cheese", guest)
-                            }, void 0, false, {
-                                fileName: "ts/form-components/mainCourse.tsx",
-                                lineNumber: 51,
-                                columnNumber: 17
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: (0, _shared.idFor)("pie-cheese", guest),
-                                children: "Cheese & Onion \uD83E\uDDC0 \uD83E\uDDC5"
-                            }, void 0, false, {
-                                fileName: "ts/form-components/mainCourse.tsx",
-                                lineNumber: 52,
-                                columnNumber: 17
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "ts/form-components/mainCourse.tsx",
-                        lineNumber: 50,
-                        columnNumber: 13
-                    }, this),
-                    mainNotApplicable(props)
-                ]
-            }, void 0, true, {
-                fileName: "ts/form-components/mainCourse.tsx",
-                lineNumber: 41,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true);
-}
-function childMain(props) {
-    const guest = props.guest;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "form-divider"
-            }, void 0, false, {
-                fileName: "ts/form-components/mainCourse.tsx",
-                lineNumber: 62,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "radio-label",
-                id: (0, _shared.idFor)("main-label", guest),
-                children: "Main:"
-            }, void 0, false, {
-                fileName: "ts/form-components/mainCourse.tsx",
-                lineNumber: 63,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "radio-group",
-                role: "radiogroup",
-                "aria-labelledby": (0, _shared.idFor)("main-label", guest),
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                onChange: onMainCourseChange(props),
-                                checked: guest.main == "A",
-                                type: "radio",
-                                name: (0, _shared.idFor)("main-radio", guest),
-                                value: "A",
-                                id: (0, _shared.idFor)("main-fish", guest)
-                            }, void 0, false, {
-                                fileName: "ts/form-components/mainCourse.tsx",
-                                lineNumber: 68,
-                                columnNumber: 17
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: (0, _shared.idFor)("main-fish", guest),
-                                children: [
-                                    "Fish Goujons \uD83D\uDC1F",
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "servedwith",
-                                        children: "Served with Chunky Chips and Mushy Peas"
-                                    }, void 0, false, {
-                                        fileName: "ts/form-components/mainCourse.tsx",
-                                        lineNumber: 70,
-                                        columnNumber: 21
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "ts/form-components/mainCourse.tsx",
-                                lineNumber: 69,
-                                columnNumber: 17
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "ts/form-components/mainCourse.tsx",
-                        lineNumber: 67,
-                        columnNumber: 13
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                onChange: onMainCourseChange(props),
-                                checked: guest.main == "B",
-                                type: "radio",
-                                name: (0, _shared.idFor)("main-radio", guest),
-                                value: "B",
-                                id: (0, _shared.idFor)("main-sausages", guest)
-                            }, void 0, false, {
-                                fileName: "ts/form-components/mainCourse.tsx",
-                                lineNumber: 74,
-                                columnNumber: 17
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: (0, _shared.idFor)("main-sausages", guest),
-                                children: [
-                                    "Pork Sausages with Creamy Buttered Mash",
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "servedwith",
-                                        children: "Served with Peas and Gravy"
-                                    }, void 0, false, {
-                                        fileName: "ts/form-components/mainCourse.tsx",
-                                        lineNumber: 76,
-                                        columnNumber: 21
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "ts/form-components/mainCourse.tsx",
-                                lineNumber: 75,
-                                columnNumber: 17
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "ts/form-components/mainCourse.tsx",
-                        lineNumber: 73,
-                        columnNumber: 13
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                onChange: onMainCourseChange(props),
-                                checked: guest.main == "C",
-                                type: "radio",
-                                name: (0, _shared.idFor)("main-radio", guest),
-                                value: "C",
-                                id: (0, _shared.idFor)("main-burger", guest)
-                            }, void 0, false, {
-                                fileName: "ts/form-components/mainCourse.tsx",
-                                lineNumber: 80,
-                                columnNumber: 17
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: (0, _shared.idFor)("main-burger", guest),
-                                children: [
-                                    "Bean Burger",
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "servedwith",
-                                        children: "Served with Sweet Potato Wedges and Baked Beans"
-                                    }, void 0, false, {
-                                        fileName: "ts/form-components/mainCourse.tsx",
-                                        lineNumber: 82,
-                                        columnNumber: 21
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "ts/form-components/mainCourse.tsx",
-                                lineNumber: 81,
-                                columnNumber: 17
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "ts/form-components/mainCourse.tsx",
-                        lineNumber: 79,
-                        columnNumber: 13
-                    }, this),
-                    mainNotApplicable(props)
-                ]
-            }, void 0, true, {
-                fileName: "ts/form-components/mainCourse.tsx",
-                lineNumber: 66,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true);
-}
-var _c;
-$RefreshReg$(_c, "MainCourse");
-
-  $parcel$ReactRefreshHelpers$1855.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../accessCodeEntry":"bhkTu","./shared":"itRod","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4x2e5":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$ae13 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$ae13.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Song", ()=>Song);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _accessCodeEntry = require("../accessCodeEntry");
-var _shared = require("./shared");
-function Song(props) {
-    const guest = props.guest;
-    if (guest.guestType == (0, _accessCodeEntry.GuestType).Child) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {}, void 0, false);
-    else {
-        function onSongChange(e) {
-            const newGuest = {
-                ...guest,
-                song: e.target.value
-            };
-            props.onGuestInfoUpdated(newGuest);
-        }
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "form-divider"
-                }, void 0, false, {
-                    fileName: "ts/form-components/song.tsx",
-                    lineNumber: 21,
-                    columnNumber: 13
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                    htmlFor: (0, _shared.idFor)("song", guest),
-                    children: "What song would get you on the dance-floor?"
-                }, void 0, false, {
-                    fileName: "ts/form-components/song.tsx",
-                    lineNumber: 22,
-                    columnNumber: 13
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
-                    onChange: onSongChange,
-                    value: guest.song,
-                    id: (0, _shared.idFor)("song", guest),
-                    rows: 5,
-                    placeholder: "Feel free to add a few \uD83D\uDC83..."
-                }, void 0, false, {
-                    fileName: "ts/form-components/song.tsx",
-                    lineNumber: 23,
-                    columnNumber: 13
-                }, this)
-            ]
-        }, void 0, true);
-    }
-}
-_c = Song;
-var _c;
-$RefreshReg$(_c, "Song");
-
-  $parcel$ReactRefreshHelpers$ae13.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../accessCodeEntry":"bhkTu","./shared":"itRod","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4xVOb":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$6c14 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$6c14.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Starter", ()=>Starter);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _accessCodeEntry = require("../accessCodeEntry");
-var _shared = require("./shared");
-function Starter(props) {
-    switch(props.guest.guestType){
-        case (0, _accessCodeEntry.GuestType).AllDay:
-            return allDayStarter(props);
-        case (0, _accessCodeEntry.GuestType).Child:
-            return childStarter(props);
-        case (0, _accessCodeEntry.GuestType).EveningOnly:
-            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {}, void 0, false);
-    }
-}
-_c = Starter;
-function onStarterChange(props) {
-    return (e)=>{
-        const newGuest = {
-            ...props.guest,
-            starter: e.target.value
-        };
-        props.onGuestInfoUpdated(newGuest);
-    };
-}
-function starterNotApplicable(props) {
-    const guest = props.guest;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                    checked: guest.starter == "NA",
-                    onChange: onStarterChange(props),
-                    type: "radio",
-                    name: (0, _shared.idFor)("starter-radio", guest),
-                    value: "NA",
-                    id: (0, _shared.idFor)("starter-na", guest)
-                }, void 0, false, {
-                    fileName: "ts/form-components/starter.tsx",
-                    lineNumber: 29,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                    htmlFor: (0, _shared.idFor)("starter-na", guest),
-                    children: "I'd like an alternative due to dietary requirements \uD83D\uDE45"
-                }, void 0, false, {
-                    fileName: "ts/form-components/starter.tsx",
-                    lineNumber: 30,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "ts/form-components/starter.tsx",
-            lineNumber: 28,
-            columnNumber: 14
-        }, this)
-    }, void 0, false);
-}
-function allDayStarter(props) {
-    const guest = props.guest;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "form-divider"
-            }, void 0, false, {
-                fileName: "ts/form-components/starter.tsx",
-                lineNumber: 37,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "radio-label",
-                id: (0, _shared.idFor)("starter-label", guest),
-                children: [
-                    "Starter:",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "servedwith",
-                        children: "Served with Bread Rolls and Butter"
-                    }, void 0, false, {
-                        fileName: "ts/form-components/starter.tsx",
-                        lineNumber: 39,
-                        columnNumber: 13
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "ts/form-components/starter.tsx",
-                lineNumber: 38,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "radio-group",
-                role: "radiogroup",
-                "aria-labelledby": (0, _shared.idFor)("starter-label", guest),
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                checked: guest.starter == "A",
-                                onChange: onStarterChange(props),
-                                type: "radio",
-                                name: (0, _shared.idFor)("starter-radio", guest),
-                                value: "A",
-                                id: (0, _shared.idFor)("starter-soup", guest)
-                            }, void 0, false, {
-                                fileName: "ts/form-components/starter.tsx",
-                                lineNumber: 43,
-                                columnNumber: 17
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: (0, _shared.idFor)("starter-soup", guest),
-                                children: [
-                                    "Leek and Potato Soup garnished with Deep Fried Leeks \uD83E\uDD54",
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "dietary",
-                                        children: "Egg Free, Gluten Free, Nut Trace Free"
-                                    }, void 0, false, {
-                                        fileName: "ts/form-components/starter.tsx",
-                                        lineNumber: 46,
-                                        columnNumber: 21
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "ts/form-components/starter.tsx",
-                                lineNumber: 44,
-                                columnNumber: 17
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "ts/form-components/starter.tsx",
-                        lineNumber: 42,
-                        columnNumber: 13
-                    }, this),
-                    starterNotApplicable(props)
-                ]
-            }, void 0, true, {
-                fileName: "ts/form-components/starter.tsx",
-                lineNumber: 41,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true);
-}
-function childStarter(props) {
-    const guest = props.guest;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "form-divider"
-            }, void 0, false, {
-                fileName: "ts/form-components/starter.tsx",
-                lineNumber: 57,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "radio-label",
-                id: (0, _shared.idFor)("starter-label", guest),
-                children: "Starter:"
-            }, void 0, false, {
-                fileName: "ts/form-components/starter.tsx",
-                lineNumber: 58,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "radio-group",
-                role: "radiogroup",
-                "aria-labelledby": (0, _shared.idFor)("starter-label", guest),
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                checked: guest.starter == "A",
-                                onChange: onStarterChange(props),
-                                type: "radio",
-                                name: (0, _shared.idFor)("starter-radio", guest),
-                                value: "A",
-                                id: (0, _shared.idFor)("starter-maccheese", guest)
-                            }, void 0, false, {
-                                fileName: "ts/form-components/starter.tsx",
-                                lineNumber: 62,
-                                columnNumber: 17
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: (0, _shared.idFor)("starter-maccheese", guest),
-                                children: "Mini Mac & Cheese \uD83E\uDDC0"
-                            }, void 0, false, {
-                                fileName: "ts/form-components/starter.tsx",
-                                lineNumber: 63,
-                                columnNumber: 17
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "ts/form-components/starter.tsx",
-                        lineNumber: 61,
-                        columnNumber: 13
-                    }, this),
-                    starterNotApplicable(props)
-                ]
-            }, void 0, true, {
-                fileName: "ts/form-components/starter.tsx",
-                lineNumber: 60,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true);
-}
-var _c;
-$RefreshReg$(_c, "Starter");
-
-  $parcel$ReactRefreshHelpers$6c14.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../accessCodeEntry":"bhkTu","./shared":"itRod","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["fqlKw","1xC6H","gy9Sb"], "gy9Sb", "parcelRequire2c2c")
+},{}]},["fqlKw","1xC6H","gy9Sb"], "gy9Sb", "parcelRequire2c2c")
 
 //# sourceMappingURL=confirm.6084f491.js.map

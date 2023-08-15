@@ -8,7 +8,9 @@ body {
 }
 
 @media screen and (min-width: 800px) {
-    html, body {
+
+    html,
+    body {
         font-size: 23px;
     }
 }
@@ -232,6 +234,32 @@ th {
     }
 }
 
+@media screen and (min-width: 800px) {
+    .email-section {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+.inline-section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.inline-section label {
+    display: block;
+}
+
+.inline-section input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+input[type=email]:invalid {
+    color: red;
+}
+
 @media screen and (max-width: 799px) {
     .radio-group {
         margin-top: 15px;
@@ -265,12 +293,12 @@ th {
     margin-bottom: 20px;
 }
 
-.form-section > label {
+.form-section>label {
     grid-column: 1;
     display: block;
 }
 
-.form-section > textarea {
+.form-section>textarea {
     grid-column-start: 2;
     grid-column-end: 3;
     width: 100%;
@@ -305,4 +333,45 @@ th {
     display: block;
     font-size: smaller;
     font-style: italic;
+}
+
+#submit-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.button-container {
+    flex: 1;
+    max-width: 500px;
+}
+
+.button input {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: xx-large;
+    text-decoration: none;
+    background-color: #8cc751;
+    width: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+    -webkit-box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #00573F;
+    -moz-box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #00573F;
+    box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #00573F;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.button input:active {
+    top: 10px;
+    background-color: #8cc751;
+    -webkit-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #00573F;
+    -moz-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #00573F;
+    box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #00573F;
 }

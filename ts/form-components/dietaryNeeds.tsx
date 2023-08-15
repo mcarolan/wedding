@@ -15,7 +15,7 @@ export function DietaryNeeds(props: FormComponentProps) {
 
     return <>
         <div className="form-divider"></div>
-        <label htmlFor={idFor("dietary-needs", guest)}>Additional dietary needs or allergens:</label>
+        <label htmlFor={idFor("dietary-needs", guest)}>Dietary restrictions or allergens:</label>
         <textarea onChange={onDietaryNeedsChange} id={idFor("dietary-needs", guest)} rows={5} placeholder="Is there anything we should let the caterers know about?" value={props.guest.dietaryNeeds}></textarea>
     </>;
 }

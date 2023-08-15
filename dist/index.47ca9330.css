@@ -221,10 +221,28 @@ th {
 }
 
 @media screen and (width >= 800px) {
-  .form-section {
+  .form-section, .email-section {
     grid-template-columns: 1fr 2fr;
     display: grid;
   }
+}
+
+.inline-section {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.inline-section label {
+  display: block;
+}
+
+.inline-section input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+input[type="email"]:invalid {
+  color: red;
 }
 
 @media screen and (width <= 799px) {
@@ -289,6 +307,40 @@ th {
   font-size: smaller;
   font-style: italic;
   display: block;
+}
+
+#submit-container {
+  place-content: center;
+  display: flex;
+}
+
+.button-container {
+  flex: 1;
+  max-width: 500px;
+}
+
+.button input {
+  color: #fff;
+  text-align: center;
+  -webkit-tap-highlight-color: #0000;
+  text-shadow: 0 1px #000;
+  filter: dropshadow(color= #000, offx= 0px, offy= 1px);
+  background-color: #8cc751;
+  border-radius: 5px;
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  font-size: xx-large;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: inset 0 1px #ffe5c4, 0 10px #00573f;
+}
+
+.button input:active {
+  -webkit-box-shadow: inset 0 1px #ffe5c4, inset 0 -3px #00573f;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3pxpx 0 #00573f;
+  background-color: #8cc751;
+  top: 10px;
+  box-shadow: inset 0 1px #ffe5c4, inset 0 -3px #00573f;
 }
 
 /*# sourceMappingURL=index.47ca9330.css.map */
