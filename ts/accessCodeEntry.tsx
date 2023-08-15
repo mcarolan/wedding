@@ -1,3 +1,4 @@
+import React, { MouseEvent } from "react";
 import { useState, ChangeEvent, FormEvent } from 'react';
 
 export enum GuestType {
@@ -41,7 +42,7 @@ export function AccessCodeEntry(props: AccessCodeEntryProps) {
       setAccessCode(event.target.value);
     }
   
-    function handleCheckAccessCode(event: FormEvent<HTMLFormElement>) {
+    function handleCheckAccessCode(event: MouseEvent) {
       event.preventDefault();
 
       const guest1: GuestInfo = {

@@ -14,8 +14,13 @@
     "process": "^0.11.10"
   },
   "dependencies": {
-    "preact": "^10.16.0",
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.5.0",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "typescript": "^5.1.6"
   }
 }

@@ -1,61 +1,68 @@
+import React, { ChangeEvent } from "react";
 import { GuestInfo, GuestType } from "../accessCodeEntry";
-import { idFor } from "./shared";
+import { FormComponentProps, idFor } from "./shared";
 
-export interface DessertProps {
-    guest: GuestInfo
-}
-
-export function Dessert(props: DessertProps) {
+export function Dessert(props: FormComponentProps) {
     switch (props.guest.guestType) {
         case GuestType.AllDay:
-            return allDayDessert(props.guest);
+            return allDayDessert(props);
         case GuestType.Child:
-            return childDessert(props.guest);
+            return childDessert(props);
         case GuestType.EveningOnly:
             return <></>;
     }
 }
 
-function dessertNotApplicable(guest: GuestInfo) {
+function changeDessert(props: FormComponentProps) {
+    return (event: ChangeEvent<HTMLInputElement>) => {
+        const newGuest: GuestInfo = {
+            ...props.guest,
+            dessert: event.target.value
+        };
+        props.onGuestInfoUpdated(newGuest);
+    }
+}
+
+function dessertNotApplicable(props: FormComponentProps) {
     return <><div>
-        <input type="radio" name={idFor("dessert-radio", guest)} value="NA" id={idFor("dessert-na", guest)} />
-        <label htmlFor={idFor("dessert-na", guest)}>I'd like an alternative due to dietary requirements 🙅</label>
+        <input type="radio" onChange={changeDessert(props)} checked={props.guest.dessert == "NA"} name={idFor("dessert-radio", props.guest)} value="NA" id={idFor("dessert-na", props.guest)} />
+        <label htmlFor={idFor("dessert-na", props.guest)}>I'd like an alternative due to dietary requirements 🙅</label>
     </div></>;
 }
 
-function allDayDessert(guest: GuestInfo) {
+function allDayDessert(props: FormComponentProps) {
     return <>
-        <div class="radio-label" id={idFor("dessert-label", guest)}>
+        <div className="radio-label" id={idFor("dessert-label", props.guest)}>
             Dessert:
-            <span class="servedwith">Served with fresh cream</span>
+            <span className="servedwith">Served with fresh cream</span>
         </div>
-        <div class="radio-group" role="radiogroup" aria-labelledby={idFor("dessert-label", guest)}>
+        <div className="radio-group" role="radiogroup" aria-labelledby={idFor("dessert-label", props.guest)}>
             <div>
-                <input type="radio" name={idFor("dessert-radio", guest)} value="A" id={idFor("dessert-tart", guest)} />
-                <label htmlFor={idFor("dessert-tart", guest)}>
+                <input type="radio" onChange={changeDessert(props)} checked={props.guest.dessert == "A"} name={idFor("dessert-radio", props.guest)} value="A" id={idFor("dessert-tart", props.guest)} />
+                <label htmlFor={idFor("dessert-tart", props.guest)}>
                     Traditional Tart Au Citron with Kirsch Marinated Black Cherries 🍋 🍒
-                    <span class="dietary">Gluten Free?</span>
+                    <span className="dietary">Gluten Free?</span>
                 </label>
             </div>
-            {dessertNotApplicable(guest)}
+            {dessertNotApplicable(props)}
         </div>
     </>;
 }
 
-function childDessert(guest: GuestInfo) {
+function childDessert(props: FormComponentProps) {
     return <>
-        <div class="radio-label" id={idFor("dessert-label", guest)}>
+        <div className="radio-label" id={idFor("dessert-label", props.guest)}>
             Dessert:
-            <span class="servedwith">Served with sauces 🤷‍♂️</span>
+            <span className="servedwith">Served with sauces 🤷‍♂️</span>
         </div>
-        <div class="radio-group" role="radiogroup" aria-labelledby={idFor("dessert-label", guest)}>
+        <div className="radio-group" role="radiogroup" aria-labelledby={idFor("dessert-label", props.guest)}>
             <div>
-                <input type="radio" name={idFor("dessert-radio", guest)} value="A" id={idFor("dessert-ice-cream", guest)} />
-                <label htmlFor={idFor("dessert-ice-cream", guest)}>
+                <input type="radio" onChange={changeDessert(props)} checked={props.guest.dessert == "A"} name={idFor("dessert-radio", props.guest)} value="A" id={idFor("dessert-ice-cream", props.guest)} />
+                <label htmlFor={idFor("dessert-ice-cream", props.guest)}>
                     Ice Cream Surprise 🍨🤔
                 </label>
             </div>
-            {dessertNotApplicable(guest)}
+            {dessertNotApplicable(props)}
         </div>
     </>;
 }

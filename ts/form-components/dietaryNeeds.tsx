@@ -1,14 +1,20 @@
+import React, { ChangeEvent } from "react";
+import { FormComponentProps, idFor } from "./shared";
 import { GuestInfo } from "../accessCodeEntry";
-import { idFor } from "./shared";
 
-export interface DietaryNeedsProps {
-    guest: GuestInfo
-}
-
-export function DietaryNeeds(props: DietaryNeedsProps) {
+export function DietaryNeeds(props: FormComponentProps) {
     const guest = props.guest;
+
+    function onDietaryNeedsChange(e: ChangeEvent<HTMLTextAreaElement>) {
+        const newGuest: GuestInfo = {
+            ...guest,
+            dietaryNeeds: e.target.value
+        };
+        props.onGuestInfoUpdated(newGuest);
+    }
+
     return <>
         <label htmlFor={idFor("dietary-needs", guest)}>Additional dietary needs or allergens:</label>
-        <textarea id={idFor("dietary-needs", guest)} rows="5" placeholder="Is there anything we should let the caterers know about?"></textarea>
+        <textarea onChange={onDietaryNeedsChange} id={idFor("dietary-needs", guest)} rows={5} placeholder="Is there anything we should let the caterers know about?" value={props.guest.dietaryNeeds}></textarea>
     </>;
 }

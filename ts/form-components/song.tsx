@@ -1,20 +1,25 @@
+import React, { ChangeEvent } from "react";
 import { GuestInfo, GuestType } from "../accessCodeEntry";
-import { idFor } from "./shared";
+import { FormComponentProps, idFor } from "./shared";
 
-export interface SongProps {
-    guest: GuestInfo
-}
-
-export function Song(props: SongProps) {
+export function Song(props: FormComponentProps) {
     const guest = props.guest;
 
     if (guest.guestType == GuestType.Child) {
         return <></>;
     }
     else {
+        function onSongChange(e: ChangeEvent<HTMLTextAreaElement>) {
+            const newGuest: GuestInfo = {
+                ...guest,
+                song: e.target.value
+            };
+            props.onGuestInfoUpdated(newGuest);
+        }
+        
         return <>
             <label htmlFor={idFor("song", guest)}>What song would get you on the dance-floor?</label>
-            <textarea id={idFor("song", guest)} rows="5" placeholder="Feel free to add a few 💃..."></textarea>
+            <textarea onChange={onSongChange} value={guest.song} id={idFor("song", guest)} rows={5} placeholder="Feel free to add a few 💃..."></textarea>
         </>
     }
 }
