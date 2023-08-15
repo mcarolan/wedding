@@ -12,8 +12,9 @@ export function EveningFood(props: FormComponentProps) {
         };
         props.onGuestInfoUpdated(newGuest);
     }
-    
+
     return <>
+        <div className="form-divider"></div>
         <div className="radio-label" id={idFor("evening-food-label", guest)}>Evening food:</div>
         <div className="radio-group" role="radiogroup" aria-labelledby={idFor("evening-food-label", guest)}>
             <div>

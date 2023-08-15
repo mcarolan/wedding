@@ -33,6 +33,7 @@ function mainNotApplicable(props: FormComponentProps) {
 function pie(props: FormComponentProps) {
     const guest = props.guest;
     return <>
+        <div className="form-divider"></div>
         <div className="radio-label" id={idFor("pie-label", guest)}>
             Pie:
             <span className="servedwith">Served with a Red Wine Gravy, Mustard Mash, Mac &amp; Cheese and Vegetables</span>
@@ -58,6 +59,7 @@ function pie(props: FormComponentProps) {
 function childMain(props: FormComponentProps) {
     const guest = props.guest;
     return <>
+        <div className="form-divider"></div>
         <div className="radio-label" id={idFor("main-label", guest)}>
             Main:
         </div>

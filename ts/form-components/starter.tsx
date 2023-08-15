@@ -4,14 +4,14 @@ import { FormComponentProps, idFor } from "./shared";
 
 export function Starter(props: FormComponentProps) {
     switch (props.guest.guestType) {
-        case GuestType.AllDay: 
+        case GuestType.AllDay:
             return allDayStarter(props);
         case GuestType.Child:
             return childStarter(props);
         case GuestType.EveningOnly:
             return <></>;
     }
-}   
+}
 
 function onStarterChange(props: FormComponentProps) {
     return (e: ChangeEvent<HTMLInputElement>) => {
@@ -34,6 +34,7 @@ function starterNotApplicable(props: FormComponentProps) {
 function allDayStarter(props: FormComponentProps) {
     const guest = props.guest;
     return <>
+        <div className="form-divider"></div>
         <div className="radio-label" id={idFor("starter-label", guest)}>Starter:
             <span className="servedwith">Served with Bread Rolls and Butter</span>
         </div>
@@ -53,6 +54,7 @@ function allDayStarter(props: FormComponentProps) {
 function childStarter(props: FormComponentProps) {
     const guest = props.guest;
     return <>
+        <div className="form-divider"></div>
         <div className="radio-label" id={idFor("starter-label", guest)}>Starter:
         </div>
         <div className="radio-group" role="radiogroup" aria-labelledby={idFor("starter-label", guest)}>

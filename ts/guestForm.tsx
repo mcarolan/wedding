@@ -7,7 +7,7 @@ import { MainCourse } from "./form-components/mainCourse";
 import { Song } from "./form-components/song";
 import { Starter } from "./form-components/starter";
 import React, { useState } from "react";
-import {cloneDeep} from 'lodash';
+import { cloneDeep } from 'lodash';
 
 export interface GuestFormProps {
     guestDetails: GuestDetails
@@ -18,11 +18,11 @@ export function GuestForm(props: GuestFormProps) {
 
     function onGuestInfoUpdated(guestInfo: GuestInfo) {
         const guestIndex = guestInfos.findIndex((g) => g.id == guestInfo.id);
-            if (guestIndex > -1) {
-                const clone = cloneDeep(guestInfos);
-                clone[guestIndex] = cloneDeep(guestInfo);
-                setGuestInfos(clone);
-            }
+        if (guestIndex > -1) {
+            const clone = cloneDeep(guestInfos);
+            clone[guestIndex] = cloneDeep(guestInfo);
+            setGuestInfos(clone);
+        }
     }
 
     return <>

@@ -3,9 +3,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Handlee";
-    font-size: 23px;
     font-weight: 400;
     text-rendering: optimizeLegibility;
+}
+
+@media screen and (min-width: 800px) {
+    html, body {
+        font-size: 23px;
+    }
 }
 
 #content {
@@ -220,29 +225,65 @@ th {
     border: solid 1px #EEEEEE;
 }
 
+@media screen and (min-width: 800px) {
+    .form-section {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .radio-group {
+        margin-top: 15px;
+    }
+}
+
 .form-section {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
     gap: 16px;
     line-height: 2;
-    border: solid 2px #303030;
+    border: solid 1px #CCCCCC;
     border-radius: 10px;
-    padding-top: 10px;
+    padding: 10px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)
 }
 
 .form-section h1 {
-    padding-top: 0px;
-    padding-left: 10px;
-    padding-bottom: 0px;
+    line-height: initial;
+    margin: 0;
     position: relative;
     grid-column-start: 1;
     grid-column-end: 3;
-    border-bottom: solid 2px #303030;
+    border-bottom: solid 1px #EEEEEE;
 }
 
 .form-section p {
     grid-column-start: 1;
     grid-column-end: 3;
+}
+
+.form-section:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.form-section > label {
+    grid-column: 1;
+    display: block;
+}
+
+.form-section > textarea {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.form-divider {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-bottom: solid 1px #CCCCCC;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .radio-label {
@@ -254,23 +295,14 @@ th {
     grid-column-end: 3;
 }
 
-#song-label {
-    grid-column: 1;
-}
-
-#song {
-    grid-column-start: 2;
-    grid-column-end: 2;
-}
-
 .dietary {
     display: block;
-    font-size: small;
+    font-size: smaller;
     font-style: italic;
 }
 
 .servedwith {
     display: block;
-    font-size: small;
+    font-size: smaller;
     font-style: italic;
 }

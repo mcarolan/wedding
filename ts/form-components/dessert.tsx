@@ -32,6 +32,7 @@ function dessertNotApplicable(props: FormComponentProps) {
 
 function allDayDessert(props: FormComponentProps) {
     return <>
+        <div className="form-divider"></div>
         <div className="radio-label" id={idFor("dessert-label", props.guest)}>
             Dessert:
             <span className="servedwith">Served with fresh cream</span>
@@ -41,7 +42,6 @@ function allDayDessert(props: FormComponentProps) {
                 <input type="radio" onChange={changeDessert(props)} checked={props.guest.dessert == "A"} name={idFor("dessert-radio", props.guest)} value="A" id={idFor("dessert-tart", props.guest)} />
                 <label htmlFor={idFor("dessert-tart", props.guest)}>
                     Traditional Tart Au Citron with Kirsch Marinated Black Cherries 🍋 🍒
-                    <span className="dietary">Gluten Free?</span>
                 </label>
             </div>
             {dessertNotApplicable(props)}
@@ -51,6 +51,7 @@ function allDayDessert(props: FormComponentProps) {
 
 function childDessert(props: FormComponentProps) {
     return <>
+        <div className="form-divider"></div>
         <div className="radio-label" id={idFor("dessert-label", props.guest)}>
             Dessert:
             <span className="servedwith">Served with sauces 🤷‍♂️</span>
