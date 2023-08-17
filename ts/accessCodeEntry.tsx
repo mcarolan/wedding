@@ -116,7 +116,7 @@ export function AccessCodeEntry(props: AccessCodeEntryProps) {
       <p>To begin, please enter the access code from your invite:</p>
       <div className="inline-section">
         <label htmlFor="accessCode">Access Code: </label>
-        <input type="text" id="accessCode" onChange={handleAccessCodeChange} />
+        <input className="accessCode" type="text" id="accessCode" onChange={handleAccessCodeChange} />
       </div>
       <div id="submit-container">
         <div className="button-container">

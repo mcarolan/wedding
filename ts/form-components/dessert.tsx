@@ -1,6 +1,7 @@
 import React, { ChangeEvent } from "react";
 import { GuestInfo, GuestType } from "../accessCodeEntry";
 import { FormComponentProps, idFor } from "./shared";
+import { useFormContext } from "react-hook-form";
 
 export function Dessert(props: FormComponentProps) {
     switch (props.guest.guestType) {
@@ -23,14 +24,10 @@ function changeDessert(props: FormComponentProps) {
     }
 }
 
-function dessertNotApplicable(props: FormComponentProps) {
-    return <><div>
-        <input type="radio" onChange={changeDessert(props)} checked={props.guest.dessert == "NA"} name={idFor("dessert-radio", props.guest)} value="NA" id={idFor("dessert-na", props.guest)} />
-        <label htmlFor={idFor("dessert-na", props.guest)}>I'd like an alternative due to dietary requirements 🙅</label>
-    </div></>;
-}
-
 function allDayDessert(props: FormComponentProps) {
+    const errorMessage = `Provide dessert option for ${props.guest.name}`;
+    const { register } = useFormContext();
+
     return <>
         <div className="form-divider"></div>
         <div className="radio-label" id={idFor("dessert-label", props.guest)}>
@@ -39,17 +36,25 @@ function allDayDessert(props: FormComponentProps) {
         </div>
         <div className="radio-group" role="radiogroup" aria-labelledby={idFor("dessert-label", props.guest)}>
             <div>
-                <input type="radio" onChange={changeDessert(props)} checked={props.guest.dessert == "A"} name={idFor("dessert-radio", props.guest)} value="A" id={idFor("dessert-tart", props.guest)} />
+                <input {...register(`guests.${props.guest.id}.dessert`, { required: errorMessage })} type="radio" onChange={changeDessert(props)} checked={props.guest.dessert == "A"} name={idFor("dessert-radio", props.guest)} value="A" id={idFor("dessert-tart", props.guest)} />
                 <label htmlFor={idFor("dessert-tart", props.guest)}>
                     Traditional Tart Au Citron with Kirsch Marinated Black Cherries 🍋 🍒
                 </label>
             </div>
-            {dessertNotApplicable(props)}
+            <div>
+                <input {...register(`guests.${props.guest.id}.dessert`, { required: errorMessage })} type="radio" onChange={changeDessert(props)} checked={props.guest.dessert == "NA"} name={idFor("dessert-radio", props.guest)} value="NA" id={idFor("dessert-na", props.guest)} />
+                <label htmlFor={idFor("dessert-na", props.guest)}>
+                    I'd like an alternative due to dietary requirements 🙅
+                </label>
+            </div>
         </div>
     </>;
 }
 
 function childDessert(props: FormComponentProps) {
+    const errorMessage = `Provide dessert option for ${props.guest.name}`;
+    const { register } = useFormContext();
+
     return <>
         <div className="form-divider"></div>
         <div className="radio-label" id={idFor("dessert-label", props.guest)}>
@@ -58,12 +63,17 @@ function childDessert(props: FormComponentProps) {
         </div>
         <div className="radio-group" role="radiogroup" aria-labelledby={idFor("dessert-label", props.guest)}>
             <div>
-                <input type="radio" onChange={changeDessert(props)} checked={props.guest.dessert == "A"} name={idFor("dessert-radio", props.guest)} value="A" id={idFor("dessert-ice-cream", props.guest)} />
+                <input {...register(`guests.${props.guest.id}.dessert`, { required: errorMessage })} type="radio" onChange={changeDessert(props)} checked={props.guest.dessert == "A"} name={idFor("dessert-radio", props.guest)} value="A" id={idFor("dessert-ice-cream", props.guest)} />
                 <label htmlFor={idFor("dessert-ice-cream", props.guest)}>
                     Ice Cream Surprise 🍨🤔
                 </label>
             </div>
-            {dessertNotApplicable(props)}
+            <div>
+                <input {...register(`guests.${props.guest.id}.dessert`, { required: errorMessage })} type="radio" onChange={changeDessert(props)} checked={props.guest.dessert == "NA"} name={idFor("dessert-radio", props.guest)} value="NA" id={idFor("dessert-na", props.guest)} />
+                <label htmlFor={idFor("dessert-na", props.guest)}>
+                    I'd like an alternative due to dietary requirements 🙅
+                </label>
+            </div>
         </div>
     </>;
 }

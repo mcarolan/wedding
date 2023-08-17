@@ -1,6 +1,7 @@
 import React, { ChangeEvent } from "react";
 import { GuestInfo, GuestType } from "../accessCodeEntry";
 import { FormComponentProps, idFor } from "./shared";
+import { useFormContext } from "react-hook-form";
 
 export function MainCourse(props: FormComponentProps) {
     switch (props.guest.guestType) {
@@ -23,15 +24,11 @@ function onMainCourseChange(props: FormComponentProps) {
     };
 }
 
-function mainNotApplicable(props: FormComponentProps) {
-    return <><div>
-        <input onChange={onMainCourseChange(props)} checked={props.guest.main == "NA"} type="radio" name={idFor("main-radio", props.guest)} value="NA" id={idFor("main-na", props.guest)} />
-        <label htmlFor={idFor("main-na", props.guest)}>I'd like an alternative due to dietary requirements 🙅</label>
-    </div></>;
-}
-
 function pie(props: FormComponentProps) {
     const guest = props.guest;
+    const errorMessage = `Provide pie option for ${props.guest.name}`;
+    const { register } = useFormContext();
+
     return <>
         <div className="form-divider"></div>
         <div className="radio-label" id={idFor("pie-label", guest)}>
@@ -40,24 +37,30 @@ function pie(props: FormComponentProps) {
         </div>
         <div className="radio-group" role="radiogroup" aria-labelledby={idFor("pie-label", guest)}>
             <div>
-                <input onChange={onMainCourseChange(props)} checked={guest.main == "A"} type="radio" name={idFor("main-radio", guest)} value="A" id={idFor("pie-chicken", guest)} />
+                <input {...register(`guests.${props.guest.id}.main`, { required: errorMessage })} onChange={onMainCourseChange(props)} checked={guest.main == "A"} type="radio" name={idFor("main-radio", guest)} value="A" id={idFor("pie-chicken", guest)} />
                 <label htmlFor={idFor("pie-chicken", guest)}>Chicken &amp; Leek 🐔</label>
             </div>
             <div>
-                <input onChange={onMainCourseChange(props)} checked={guest.main == "B"} type="radio" name={idFor("main-radio", guest)} value="B" id={idFor("pie-beef", guest)} />
+                <input {...register(`guests.${props.guest.id}.main`, { required: errorMessage })} onChange={onMainCourseChange(props)} checked={guest.main == "B"} type="radio" name={idFor("main-radio", guest)} value="B" id={idFor("pie-beef", guest)} />
                 <label htmlFor={idFor("pie-beef", guest)}>Steak &amp; Merlot 🐮 🍷</label>
             </div>
             <div>
-                <input onChange={onMainCourseChange(props)} checked={guest.main == "C"} type="radio" name={idFor("main-radio", guest)} value="C" id={idFor("pie-cheese", guest)} />
+                <input {...register(`guests.${props.guest.id}.main`, { required: errorMessage })} onChange={onMainCourseChange(props)} checked={guest.main == "C"} type="radio" name={idFor("main-radio", guest)} value="C" id={idFor("pie-cheese", guest)} />
                 <label htmlFor={idFor("pie-cheese", guest)}>Cheese &amp; Onion 🧀 🧅</label>
             </div>
-            {mainNotApplicable(props)}
+            <div>
+                <input {...register(`guests.${props.guest.id}.main`, { required: errorMessage })} onChange={onMainCourseChange(props)} checked={guest.main == "NA"} type="radio" name={idFor("main-radio", guest)} value="NA" id={idFor("main-na", guest)} />
+                <label htmlFor={idFor("main-na", guest)}>I'd like an alternative due to dietary requirements 🙅</label>
+            </div>
         </div>
     </>;
 }
 
 function childMain(props: FormComponentProps) {
     const guest = props.guest;
+    const errorMessage = `Provide main course option for ${props.guest.name}`;
+    const { register } = useFormContext();
+
     return <>
         <div className="form-divider"></div>
         <div className="radio-label" id={idFor("main-label", guest)}>
@@ -65,24 +68,27 @@ function childMain(props: FormComponentProps) {
         </div>
         <div className="radio-group" role="radiogroup" aria-labelledby={idFor("main-label", guest)}>
             <div>
-                <input onChange={onMainCourseChange(props)} checked={guest.main == "A"} type="radio" name={idFor("main-radio", guest)} value="A" id={idFor("main-fish", guest)} />
+                <input {...register(`guests.${props.guest.id}.main`, { required: errorMessage })} onChange={onMainCourseChange(props)} checked={guest.main == "A"} type="radio" name={idFor("main-radio", guest)} value="A" id={idFor("main-fish", guest)} />
                 <label htmlFor={idFor("main-fish", guest)}>Fish Goujons 🐟
                     <span className="servedwith">Served with Chunky Chips and Mushy Peas</span>
                 </label>
             </div>
             <div>
-                <input onChange={onMainCourseChange(props)} checked={guest.main == "B"} type="radio" name={idFor("main-radio", guest)} value="B" id={idFor("main-sausages", guest)} />
+                <input {...register(`guests.${props.guest.id}.main`, { required: errorMessage })} onChange={onMainCourseChange(props)} checked={guest.main == "B"} type="radio" name={idFor("main-radio", guest)} value="B" id={idFor("main-sausages", guest)} />
                 <label htmlFor={idFor("main-sausages", guest)}>Pork Sausages with Creamy Buttered Mash
                     <span className="servedwith">Served with Peas and Gravy</span>
                 </label>
             </div>
             <div>
-                <input onChange={onMainCourseChange(props)} checked={guest.main == "C"} type="radio" name={idFor("main-radio", guest)} value="C" id={idFor("main-burger", guest)} />
+                <input {...register(`guests.${props.guest.id}.main`, { required: errorMessage })} onChange={onMainCourseChange(props)} checked={guest.main == "C"} type="radio" name={idFor("main-radio", guest)} value="C" id={idFor("main-burger", guest)} />
                 <label htmlFor={idFor("main-burger", guest)}>Bean Burger
                     <span className="servedwith">Served with Sweet Potato Wedges and Baked Beans</span>
                 </label>
             </div>
-            {mainNotApplicable(props)}
+            <div>
+                <input {...register(`guests.${props.guest.id}.main`, { required: errorMessage })} onChange={onMainCourseChange(props)} checked={guest.main == "NA"} type="radio" name={idFor("main-radio", guest)} value="NA" id={idFor("main-na", guest)} />
+                <label htmlFor={idFor("main-na", guest)}>I'd like an alternative due to dietary requirements 🙅</label>
+            </div>
         </div>
     </>;
 }
