@@ -1,5 +1,7 @@
 import React, { MouseEvent } from "react";
 import { useState, ChangeEvent, FormEvent } from 'react';
+import axios from 'axios';
+import { LoadingSpinner } from "./loadingSpinner";
 
 export enum GuestType {
   AllDay = "AD",
@@ -37,94 +39,136 @@ export interface AccessCodeEntryProps {
 
 export function AccessCodeEntry(props: AccessCodeEntryProps) {
   const [accessCode, setAccessCode] = useState('');
+  const [error, setError] = useState<string>();
+  const [requestInProgress, setRequestInProgress] = useState(false);
 
   function handleAccessCodeChange(event: ChangeEvent<HTMLInputElement>) {
+    event.preventDefault();
     setAccessCode(event.target.value);
   }
 
-  function handleCheckAccessCode(event: MouseEvent<HTMLInputElement>) {
+  async function handleCheckAccessCode(event: MouseEvent<HTMLInputElement>) {
     event.preventDefault();
-    const guest1: GuestInfo = {
-      id: "1",
-      name: 'Laura',
-      guestType: GuestType.AllDay,
-      attendance: undefined,
-      starter: undefined,
-      main: undefined,
-      dessert: undefined,
-      eveningFood: undefined,
-      dietaryNeeds: undefined,
-      song: undefined
-    };
 
-    const guest2: GuestInfo = {
-      id: "2",
-      name: 'Martin',
-      guestType: GuestType.AllDay,
-      attendance: undefined,
-      starter: undefined,
-      main: undefined,
-      dessert: undefined,
-      eveningFood: undefined,
-      dietaryNeeds: undefined,
-      song: undefined
-    };
+    const sanitisedAccessCode = accessCode.trim().toUpperCase();
 
-    const childGuest: GuestInfo = {
-      id: "3",
-      name: 'Ruby',
-      guestType: GuestType.Child,
-      attendance: undefined,
-      starter: undefined,
-      main: undefined,
-      dessert: undefined,
-      eveningFood: undefined,
-      dietaryNeeds: undefined,
-      song: undefined
-    };
+    try {
+      setRequestInProgress(true);
+      const response = await axios.get("https://script.google.com/macros/s/AKfycbwI68QJKsrTaC5GL3zNbBqAjjYFAEQai2ttU-VpQxpJvjAhKi4TTeO4lZxMW76xyeHvYQ/exec", {
+        params: { accessCode: sanitisedAccessCode }
+      });
 
-    const eveningGuest: GuestInfo = {
-      id: "4",
-      name: 'ITV Person',
-      guestType: GuestType.EveningOnly,
-      attendance: undefined,
-      starter: undefined,
-      main: undefined,
-      dessert: undefined,
-      eveningFood: undefined,
-      dietaryNeeds: undefined,
-      song: undefined
-    };
+      const body = response.data as CheckAccessCodeResponse;
+
+      if (body.accessCodeValid) {
+        const guestDetails: GuestDetails = {
+          emailAddress: body.emailAddress,
+          guests: body.guests
+        };
+        props.onSuccess(guestDetails);
+      }
+      else {
+        setAccessCode("");
+        setError((_) => "We don't recognise that access code. Please check it and try again, or get in contact with us if you need help.");
+      }
+
+    }
+    catch (e) {
+      console.error("web service error");
+      console.error(e);
+      setError((_) => "We're having a bit of trouble at the moment. Please try again later, and let us know if this problem persists.");
+    }
+    finally {
+      setRequestInProgress(false);
+    }
+
+    // const guest1: GuestInfo = {
+    //   id: "1",
+    //   name: 'Laura',
+    //   guestType: GuestType.AllDay,
+    //   attendance: undefined,
+    //   starter: undefined,
+    //   main: undefined,
+    //   dessert: undefined,
+    //   eveningFood: undefined,
+    //   dietaryNeeds: undefined,
+    //   song: undefined
+    // };
+
+    // const guest2: GuestInfo = {
+    //   id: "2",
+    //   name: 'Martin',
+    //   guestType: GuestType.AllDay,
+    //   attendance: undefined,
+    //   starter: undefined,
+    //   main: undefined,
+    //   dessert: undefined,
+    //   eveningFood: undefined,
+    //   dietaryNeeds: undefined,
+    //   song: undefined
+    // };
+
+    // const childGuest: GuestInfo = {
+    //   id: "3",
+    //   name: 'Ruby',
+    //   guestType: GuestType.Child,
+    //   attendance: undefined,
+    //   starter: undefined,
+    //   main: undefined,
+    //   dessert: undefined,
+    //   eveningFood: undefined,
+    //   dietaryNeeds: undefined,
+    //   song: undefined
+    // };
+
+    // const eveningGuest: GuestInfo = {
+    //   id: "4",
+    //   name: 'ITV Person',
+    //   guestType: GuestType.EveningOnly,
+    //   attendance: undefined,
+    //   starter: undefined,
+    //   main: undefined,
+    //   dessert: undefined,
+    //   eveningFood: undefined,
+    //   dietaryNeeds: undefined,
+    //   song: undefined
+    // };
 
 
-    const response: GuestDetails = {
-      emailAddress: "foo@bar.com",
-      guests: [
-        guest1,
-        guest2,
-        childGuest,
-        eveningGuest
-      ]
-    };
+    // const response: GuestDetails = {
+    //   emailAddress: "foo@bar.com",
+    //   guests: [
+    //     guest1,
+    //     guest2,
+    //     childGuest,
+    //     eveningGuest
+    //   ]
+    // };
 
-    props.onSuccess(response);
+    // props.onSuccess(response);
   }
 
   return (
     <>
+      <LoadingSpinner isLoading={requestInProgress} />
       <p>Thanks for getting back to us.</p>
       <p>To begin, please enter the access code from your invite:</p>
-      <div className="inline-section">
-        <label htmlFor="accessCode">Access Code: </label>
-        <input className="accessCode" type="text" id="accessCode" onChange={handleAccessCodeChange} />
-      </div>
-      <div id="submit-container">
-        <div className="button-container">
-          <div className="button" onTouchStart={(_) => { }}>
-            <input type="button" value="Check" onClick={handleCheckAccessCode} />
+      <form>
+        <div className="inline-section">
+          <label htmlFor="accessCode">Access Code: </label>
+          <input className="accessCode" autoComplete="off" type="text" id="accessCode" value={accessCode} onChange={handleAccessCodeChange} />
+        </div>
+        {error && <div className="errors">
+          {error}
+        </div>}
+        <div id="submit-container">
+          <div className="button-container">
+            <div className="button" onTouchStart={(_) => { }}>
+              <input type="submit" disabled={requestInProgress} value="Check" onClick={handleCheckAccessCode} />
+            </div>
           </div>
         </div>
-      </div>
+      </form>
     </>
   );
 }

@@ -17,11 +17,17 @@ function errorMessages(errors: object): string[] {
                 results.push(message);
             }
         }
+        else {
+            for (const message of Object.entries(value).flatMap(([_, o]) => errorMessages(o as object))) {
+                results.push(message);
+            }
+        }
     }
     return results;
 }
 
 function renderErrorList<T extends FieldValues>(errors: FieldErrors<T>) {
+    console.log(errorMessages(errors));
     return <>
         <div className="errors">
             Sorry, we need a bit more information:

@@ -360,6 +360,10 @@ textarea {
     text-transform: uppercase;
 }
 
+.button input:disabled {
+    background-color: #BBBBBB;
+}
+
 .button input {
     color: white;
     font-family: Helvetica, sans-serif;
@@ -382,7 +386,7 @@ textarea {
     border-radius: 5px;
 }
 
-.button input:active {
+.button input:active:enabled {
     top: 10px;
     background-color: #8cc751;
     -webkit-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #00573F;
@@ -394,4 +398,60 @@ textarea {
     padding: 20px;
     color: red;
     font-weight: bold;
+}
+
+.nav-title {
+    cursor: pointer;
+}
+
+.nav-header {
+    position: relative;
+}
+
+.nav-header .link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -60px;
+    margin-left: -60px;
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    z-index: 101;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#dim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.8);
+
+    z-index: 100;
 }
