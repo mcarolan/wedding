@@ -38,8 +38,15 @@ function allDayStarter(props: FormComponentProps) {
             <div>
                 <input {...register(`guests.${props.guest.id}.start`, { required: errorMessage })} checked={guest.starter == "A"} onChange={onStarterChange(props)} type="radio" name={idFor("starter-radio", guest)} value="A" id={idFor("starter-soup", guest)} />
                 <label htmlFor={idFor("starter-soup", guest)}>
-                    Leek and Potato Soup garnished with Deep Fried Leeks 🥔
-                    <span className="dietary">Egg Free, Gluten Free, Nut Trace Free</span>
+                    Spiced Butternut Squash Soup with Smoky Chorizo 🐷
+                    <span className="dietary">Egg Free, Nut Trace Free</span>
+                </label>
+            </div>
+            <div>
+                <input {...register(`guests.${props.guest.id}.start`, { required: errorMessage })} checked={guest.starter == "B"} onChange={onStarterChange(props)} type="radio" name={idFor("starter-radio", guest)} value="B" id={idFor("starter-soup", guest)} />
+                <label htmlFor={idFor("starter-soup", guest)}>
+                    Spiced Butternut Squash Soup
+                    <span className="dietary">Vegetarian, Egg Free, Nut Trace Free</span>
                 </label>
             </div>
             <div>

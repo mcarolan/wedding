@@ -31014,10 +31014,10 @@ function allDayStarter(props) {
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                 htmlFor: (0, _shared.idFor)("starter-soup", guest),
                                 children: [
-                                    "Leek and Potato Soup garnished with Deep Fried Leeks \uD83E\uDD54",
+                                    "Spiced Butternut Squash Soup with Smoky Chorizo \uD83D\uDC37",
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         className: "dietary",
-                                        children: "Egg Free, Gluten Free, Nut Trace Free"
+                                        children: "Egg Free, Nut Trace Free"
                                     }, void 0, false, {
                                         fileName: "ts/form-components/starter.tsx",
                                         lineNumber: 42,
@@ -31041,21 +31041,31 @@ function allDayStarter(props) {
                                 ...register(`guests.${props.guest.id}.start`, {
                                     required: errorMessage
                                 }),
-                                checked: guest.starter == "NA",
+                                checked: guest.starter == "B",
                                 onChange: onStarterChange(props),
                                 type: "radio",
                                 name: (0, _shared.idFor)("starter-radio", guest),
-                                value: "NA",
-                                id: (0, _shared.idFor)("starter-na", guest)
+                                value: "A",
+                                id: (0, _shared.idFor)("starter-soup", guest)
                             }, void 0, false, {
                                 fileName: "ts/form-components/starter.tsx",
                                 lineNumber: 46,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: (0, _shared.idFor)("starter-na", guest),
-                                children: "I'd like an alternative due to dietary requirements \uD83D\uDE45"
-                            }, void 0, false, {
+                                htmlFor: (0, _shared.idFor)("starter-soup", guest),
+                                children: [
+                                    "Spiced Butternut Squash Soup",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "dietary",
+                                        children: "Vegetarian, Egg Free, Nut Trace Free"
+                                    }, void 0, false, {
+                                        fileName: "ts/form-components/starter.tsx",
+                                        lineNumber: 49,
+                                        columnNumber: 21
+                                    }, this)
+                                ]
+                            }, void 0, true, {
                                 fileName: "ts/form-components/starter.tsx",
                                 lineNumber: 47,
                                 columnNumber: 17
@@ -31064,6 +31074,37 @@ function allDayStarter(props) {
                     }, void 0, true, {
                         fileName: "ts/form-components/starter.tsx",
                         lineNumber: 45,
+                        columnNumber: 13
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                ...register(`guests.${props.guest.id}.start`, {
+                                    required: errorMessage
+                                }),
+                                checked: guest.starter == "NA",
+                                onChange: onStarterChange(props),
+                                type: "radio",
+                                name: (0, _shared.idFor)("starter-radio", guest),
+                                value: "NA",
+                                id: (0, _shared.idFor)("starter-na", guest)
+                            }, void 0, false, {
+                                fileName: "ts/form-components/starter.tsx",
+                                lineNumber: 53,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: (0, _shared.idFor)("starter-na", guest),
+                                children: "I'd like an alternative due to dietary requirements \uD83D\uDE45"
+                            }, void 0, false, {
+                                fileName: "ts/form-components/starter.tsx",
+                                lineNumber: 54,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "ts/form-components/starter.tsx",
+                        lineNumber: 52,
                         columnNumber: 13
                     }, this)
                 ]
@@ -31091,7 +31132,7 @@ function childStarter(props) {
                 className: "form-divider"
             }, void 0, false, {
                 fileName: "ts/form-components/starter.tsx",
-                lineNumber: 59,
+                lineNumber: 66,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31100,7 +31141,7 @@ function childStarter(props) {
                 children: "Starter:"
             }, void 0, false, {
                 fileName: "ts/form-components/starter.tsx",
-                lineNumber: 60,
+                lineNumber: 67,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31122,7 +31163,7 @@ function childStarter(props) {
                                 id: (0, _shared.idFor)("starter-maccheese", guest)
                             }, void 0, false, {
                                 fileName: "ts/form-components/starter.tsx",
-                                lineNumber: 64,
+                                lineNumber: 71,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -31130,13 +31171,13 @@ function childStarter(props) {
                                 children: "Mini Mac & Cheese \uD83E\uDDC0"
                             }, void 0, false, {
                                 fileName: "ts/form-components/starter.tsx",
-                                lineNumber: 65,
+                                lineNumber: 72,
                                 columnNumber: 17
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "ts/form-components/starter.tsx",
-                        lineNumber: 63,
+                        lineNumber: 70,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31153,7 +31194,7 @@ function childStarter(props) {
                                 id: (0, _shared.idFor)("starter-na", guest)
                             }, void 0, false, {
                                 fileName: "ts/form-components/starter.tsx",
-                                lineNumber: 68,
+                                lineNumber: 75,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -31161,19 +31202,19 @@ function childStarter(props) {
                                 children: "I'd like an alternative due to dietary requirements \uD83D\uDE45"
                             }, void 0, false, {
                                 fileName: "ts/form-components/starter.tsx",
-                                lineNumber: 69,
+                                lineNumber: 76,
                                 columnNumber: 17
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "ts/form-components/starter.tsx",
-                        lineNumber: 67,
+                        lineNumber: 74,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "ts/form-components/starter.tsx",
-                lineNumber: 62,
+                lineNumber: 69,
                 columnNumber: 9
             }, this)
         ]
