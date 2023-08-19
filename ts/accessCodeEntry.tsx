@@ -34,7 +34,7 @@ export interface GuestDetails {
 }
 
 export interface AccessCodeEntryProps {
-  onSuccess: (GuestDetails) => void;
+  onSuccess: (string, GuestDetails) => void;
 }
 
 export function AccessCodeEntry(props: AccessCodeEntryProps) {
@@ -65,7 +65,7 @@ export function AccessCodeEntry(props: AccessCodeEntryProps) {
           emailAddress: body.emailAddress,
           guests: body.guests
         };
-        props.onSuccess(guestDetails);
+        props.onSuccess(sanitisedAccessCode, guestDetails);
       }
       else {
         setAccessCode("");
@@ -81,71 +81,6 @@ export function AccessCodeEntry(props: AccessCodeEntryProps) {
     finally {
       setRequestInProgress(false);
     }
-
-    // const guest1: GuestInfo = {
-    //   id: "1",
-    //   name: 'Laura',
-    //   guestType: GuestType.AllDay,
-    //   attendance: undefined,
-    //   starter: undefined,
-    //   main: undefined,
-    //   dessert: undefined,
-    //   eveningFood: undefined,
-    //   dietaryNeeds: undefined,
-    //   song: undefined
-    // };
-
-    // const guest2: GuestInfo = {
-    //   id: "2",
-    //   name: 'Martin',
-    //   guestType: GuestType.AllDay,
-    //   attendance: undefined,
-    //   starter: undefined,
-    //   main: undefined,
-    //   dessert: undefined,
-    //   eveningFood: undefined,
-    //   dietaryNeeds: undefined,
-    //   song: undefined
-    // };
-
-    // const childGuest: GuestInfo = {
-    //   id: "3",
-    //   name: 'Ruby',
-    //   guestType: GuestType.Child,
-    //   attendance: undefined,
-    //   starter: undefined,
-    //   main: undefined,
-    //   dessert: undefined,
-    //   eveningFood: undefined,
-    //   dietaryNeeds: undefined,
-    //   song: undefined
-    // };
-
-    // const eveningGuest: GuestInfo = {
-    //   id: "4",
-    //   name: 'ITV Person',
-    //   guestType: GuestType.EveningOnly,
-    //   attendance: undefined,
-    //   starter: undefined,
-    //   main: undefined,
-    //   dessert: undefined,
-    //   eveningFood: undefined,
-    //   dietaryNeeds: undefined,
-    //   song: undefined
-    // };
-
-
-    // const response: GuestDetails = {
-    //   emailAddress: "foo@bar.com",
-    //   guests: [
-    //     guest1,
-    //     guest2,
-    //     childGuest,
-    //     eveningGuest
-    //   ]
-    // };
-
-    // props.onSuccess(response);
   }
 
   return (

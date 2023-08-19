@@ -20,7 +20,7 @@ export function Song(props: FormComponentProps) {
         return <>
             <div className="form-divider"></div>
             <label htmlFor={idFor("song", guest)}>What song would get you on the dance-floor?</label>
-            <textarea onChange={onSongChange} value={guest.song} id={idFor("song", guest)} rows={5} placeholder="Feel free to add a few 💃..."></textarea>
+            <textarea onChange={onSongChange} value={guest.song} id={idFor("song", guest)} rows={5} placeholder="Feel free to add a few 💃..." maxLength={500}></textarea>
         </>
     }
 }

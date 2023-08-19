@@ -6,17 +6,33 @@ import { EveningFood } from "./form-components/eveningFood";
 import { MainCourse } from "./form-components/mainCourse";
 import { Song } from "./form-components/song";
 import { Starter } from "./form-components/starter";
-import React, { useState } from "react";
+import React, { ChangeEvent, useState } from "react";
 import { cloneDeep } from 'lodash';
 import { FormProvider, useForm } from "react-hook-form";
 import { Errors } from "./form-components/errors";
+import { LoadingSpinner } from "./loadingSpinner";
+import axios from "axios";
 
 export interface GuestFormProps {
-    guestDetails: GuestDetails
+    accessCode: string,
+    guestDetails: GuestDetails,
+    onSubmissionComplete: () => void
 }
 
+
+interface SubmitResponsesRequest {
+    accessCode: string,
+    emailAddress: string,
+    guests: GuestInfo[]
+}
+
+
 export function GuestForm(props: GuestFormProps) {
+    const [emailAddress, setEmailAddress] = useState<string | undefined>(props.guestDetails.emailAddress);
     const [guestInfos, setGuestInfos] = useState(cloneDeep(props.guestDetails.guests));
+    const [requestInProgress, setRequestInProgress] = useState(false);
+    const [requestError, setRequestError] = useState<string>();
+
     const methods = useForm({
         shouldFocusError: false
     });
@@ -30,16 +46,39 @@ export function GuestForm(props: GuestFormProps) {
         }
     }
 
-    function onSubmit() {
-        console.log(`submitting ${guestInfos}`);
+    function emailAddressUpdated(e: ChangeEvent<HTMLInputElement>) {
+        setEmailAddress(e.target.value);
     }
 
-    function err(errors): boolean {
-        console.log(errors);
-        return true;
+    async function onSubmit() {
+        if (emailAddress) {
+            const request: SubmitResponsesRequest = {
+                accessCode: props.accessCode,
+                emailAddress: emailAddress,
+                guests: guestInfos
+            };
+            setRequestInProgress(true);
+
+            try {
+                await axios.post("https://script.google.com/macros/s/AKfycbwI68QJKsrTaC5GL3zNbBqAjjYFAEQai2ttU-VpQxpJvjAhKi4TTeO4lZxMW76xyeHvYQ/exec", request, {
+                    headers: {
+                        'Content-Type': 'text/plain;charset=utf-8' //hack to stop a preflight request
+                    }
+                });
+                props.onSubmissionComplete();
+            }
+            catch (e) {
+                setRequestError("We're having trouble submitting your responses. Please try again later. If this problem persists please let us know!");
+            }
+            finally {
+                setRequestInProgress(false);
+            }
+        }
     }
 
     return <>
+        <LoadingSpinner isLoading={requestInProgress} />
+
         <p>Thanks! We found your invite.</p>
         <p>Please provide us with an email address for your group. It'll only be used to send important information.</p>
 
@@ -49,8 +88,9 @@ export function GuestForm(props: GuestFormProps) {
                     <label htmlFor="inline-address">
                         Email address:
                     </label>
-                    <input type="email" id="email-address" placeholder="email@provider.com" {
+                    <input type="email" id="email-address" value={emailAddress} placeholder="email@provider.com" {
                         ...methods.register("email", {
+                            onChange: emailAddressUpdated,
                             required: "Please provide email address for your group",
                             pattern: {
                                 value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -82,6 +122,9 @@ export function GuestForm(props: GuestFormProps) {
                     </div>)
                 }</div>
                 <Errors errors={methods.formState.errors} />
+                {requestError && <div className="errors">
+                    {requestError}
+                </div>}
                 <div id="submit-container">
                     <div className="button-container">
                         <div className="button" onTouchStart={(_) => { }}>
