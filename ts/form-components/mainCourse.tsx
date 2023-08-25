@@ -1,16 +1,21 @@
 import React, { ChangeEvent } from "react";
 import { GuestInfo, GuestType } from "../accessCodeEntry";
-import { FormComponentProps, idFor } from "./shared";
+import { FormComponentProps, chrisGuestId, idFor } from "./shared";
 import { useFormContext } from "react-hook-form";
 
 export function MainCourse(props: FormComponentProps) {
-    switch (props.guest.guestType) {
-        case GuestType.AllDay:
-            return pie(props);
-        case GuestType.Child:
-            return childMain(props);
-        case GuestType.EveningOnly:
-            return <></>;
+    if (props.guest.id == chrisGuestId) {
+        return veganPie(props)
+    }
+    else {
+        switch (props.guest.guestType) {
+            case GuestType.AllDay:
+                return pie(props);
+            case GuestType.Child:
+                return childMain(props);
+            case GuestType.EveningOnly:
+                return <></>;
+        }
     }
 }
 
@@ -22,6 +27,37 @@ function onMainCourseChange(props: FormComponentProps) {
         };
         props.onGuestInfoUpdated(newGuest);
     };
+}
+
+
+function veganPie(props: FormComponentProps) {
+    const guest = props.guest;
+    const errorMessage = `Provide pie option for ${props.guest.name}`;
+    const { register } = useFormContext();
+
+    return <>
+        <div className="form-divider"></div>
+        <div className="radio-label" id={idFor("pie-label", guest)}>
+            Pie:
+            <span className="servedwith">Served with a Red Wine Gravy, Mustard Mash and Vegetables</span>
+        </div>
+        <div className="radio-group" role="radiogroup" aria-labelledby={idFor("pie-label", guest)}>
+            <div>
+                <input {...register(`guests.${props.guest.id}.main`, { required: errorMessage })} onChange={onMainCourseChange(props)} checked={guest.main == "VEGAN-A"} type="radio" name={idFor("main-radio", guest)} value="VEGAN-A" id={idFor("pie-leek", guest)} />
+                <label htmlFor={idFor("pie-leek", guest)}>Leek &amp; Potato Pie 🥔</label>
+                <span className="dietary">Vegan</span>
+            </div>
+            <div>
+                <input {...register(`guests.${props.guest.id}.main`, { required: errorMessage })} onChange={onMainCourseChange(props)} checked={guest.main == "VEGAN-B"} type="radio" name={idFor("main-radio", guest)} value="VEGAN-B" id={idFor("pie-veg", guest)} />
+                <label htmlFor={idFor("pie-veg", guest)}>Vegetable Pie 🥕</label>
+                <span className="dietary">Vegan</span>
+            </div>
+            <div>
+                <input {...register(`guests.${props.guest.id}.main`, { required: errorMessage })} onChange={onMainCourseChange(props)} checked={guest.main == "NA"} type="radio" name={idFor("main-radio", guest)} value="NA" id={idFor("main-na", guest)} />
+                <label htmlFor={idFor("main-na", guest)}>I'd like an alternative due to dietary requirements 🙅</label>
+            </div>
+        </div>
+    </>;
 }
 
 function pie(props: FormComponentProps) {
