@@ -55,7 +55,10 @@ export function AccessCodeEntry(props: AccessCodeEntryProps) {
     try {
       setRequestInProgress(true);
       const response = await axios.get("https://script.google.com/macros/s/AKfycbwI68QJKsrTaC5GL3zNbBqAjjYFAEQai2ttU-VpQxpJvjAhKi4TTeO4lZxMW76xyeHvYQ/exec", {
-        params: { accessCode: sanitisedAccessCode }
+        params: { accessCode: sanitisedAccessCode },
+        headers: {
+          'Content-Type': 'text/plain;charset=utf-8' //hack to stop a preflight request
+        }
       });
 
       const body = response.data as CheckAccessCodeResponse;
@@ -69,7 +72,7 @@ export function AccessCodeEntry(props: AccessCodeEntryProps) {
       }
       else {
         setAccessCode("");
-        setError((_) => "We don't recognise that access code. Please check it and try again, or get in contact with us if you need help.");
+        setError((_) => "We don't recognise that access code. Please check it and try again. Get in contact with us if you need help.");
       }
 
     }
