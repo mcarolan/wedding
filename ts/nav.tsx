@@ -1,4 +1,4 @@
-window.hideNav = () => {
+(window as any).hideNav = () => {
     const navCheck = document.getElementById("nav-check") as HTMLInputElement;
     if (navCheck) {
         navCheck.checked = false;
