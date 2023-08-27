@@ -94,7 +94,7 @@ export function AccessCodeEntry(props: AccessCodeEntryProps) {
       <form>
         <div className="inline-section">
           <label htmlFor="accessCode">Access Code: </label>
-          <input className="accessCode" autoComplete="off" type="text" id="accessCode" value={accessCode} onChange={handleAccessCodeChange} />
+          <input className="accessCode" autoComplete="off" type="text" id="accessCode" value={accessCode} onChange={handleAccessCodeChange} autoFocus />
         </div>
         {error && <div className="errors">
           {error}
