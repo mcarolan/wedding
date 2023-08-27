@@ -8,6 +8,7 @@ body {
 }
 
 @media screen and (min-width: 800px) {
+
     html,
     body {
         font-size: 23px;
@@ -204,14 +205,24 @@ li {
     font-weight: bold;
 }
 
+.scroll-container {
+    display: block;
+    overflow-x: scroll;
+
+	background:
+    linear-gradient(to right, white 20%, rgba(0, 0, 0, 0)),
+    linear-gradient(to right, rgba(0, 0, 0, 0), white 80%) 0 100%,
+    linear-gradient(to right, black, rgba(0, 0, 0, 0) 20%),
+    linear-gradient(to left, black, rgba(0, 0, 0, 0) 20%);
+    background-attachment: local, local, scroll, scroll;
+}
+
 table {
     border-collapse: separate;
     border-spacing: 0;
     border-radius: .25rem;
     border: solid 2px #EEEEEE;
     width: 100%;
-    display: block;
-    overflow-x: scroll;
     white-space: nowrap;
 }
 
