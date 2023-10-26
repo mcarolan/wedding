@@ -80,7 +80,7 @@ export function GuestForm(props: GuestFormProps) {
         <LoadingSpinner isLoading={requestInProgress} />
 
         <p>Thanks! We found your invite.</p>
-        <p>Please fill in the following form. Don't worry, you can change your answers any time before 15th January 2024.</p>
+        <p>Please fill in the following form. Don't worry, you can change your answers any time before 15th December 2023.</p>
 
         <FormProvider {...methods}>
             <form onSubmit={methods.handleSubmit(onSubmit)}>

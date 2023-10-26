@@ -25,7 +25,7 @@ function App() {
   function submissionCompleteView() {
     return <>
       <p>Thanks for letting us know! 😃</p>
-      <p>Please feel free to come back before 15th January 2024 to update any information.</p>
+      <p>Please feel free to come back before 15th December 2023 to update any information.</p>
       <p>We will get in contact with you if you've indicated any special dietary needs.</p>
     </>;
   }
