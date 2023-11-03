@@ -135,13 +135,12 @@ function allDayDessert(props: FormComponentProps) {
         <div className="form-divider"></div>
         <div className="radio-label" id={idFor("dessert-label", props.guest)}>
             Dessert:
-            <span className="servedwith">Served with fresh cream</span>
         </div>
         <div className="radio-group" role="radiogroup" aria-labelledby={idFor("dessert-label", props.guest)}>
             <div>
                 <input {...register(`guests.${props.guest.id}.dessert`, { required: errorMessage })} type="radio" onChange={changeDessert(props)} checked={props.guest.dessert == "A"} name={idFor("dessert-radio", props.guest)} value="A" id={idFor("dessert-tart", props.guest)} />
                 <label htmlFor={idFor("dessert-tart", props.guest)}>
-                    Traditional Tart Au Citron with Kirsch Marinated Black Cherries 🍋 🍒
+                    Lemon Curd Cheesecake Meringue with Chocolate Shards 🍋🍫
                 </label>
             </div>
             <div>
